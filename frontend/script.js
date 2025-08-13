@@ -272,6 +272,19 @@ function showTimeValidationError() {
     }, 2000);
 }
 
+function populateAvailableRooms(rooms) {
+    let roomArray = rooms.split(',').map(room => room.trim());
+    let responseParent = document.querySelector(".responses-container");
+    responseParent.innerHTML = '';
+    roomArray.forEach(room => {
+        let roomDiv = document.createElement("div");
+        roomDiv.className = "free-class";
+        roomDiv.innerHTML = `<i class="bi bi-lightning-fill"></i><h1>${room}</h1>`;
+        responseParent.appendChild(roomDiv);
+    });
+    // trim whitespace 
+
+}
 document.getElementById("check-button").addEventListener("click", async () => {
     const fromRaw = fromPicker.value24;
     const toRaw = toPicker.value24;
@@ -298,7 +311,7 @@ document.getElementById("check-button").addEventListener("click", async () => {
     if (data.status === "success") {
         if (data.free_classes && data.free_classes.length > 0) {
             const freeRooms = data.free_classes.map(cls => cls.room).join(", ");
-            responseElm.innerText = `Free rooms: ${freeRooms}`;
+            populateAvailableRooms(freeRooms);
         } else {
             responseElm.innerText = "No free rooms found for the selected time.";
         }

@@ -22,7 +22,6 @@ def get_free_classes(json_data, day, check_start, check_end):
     check_start = parse_time(check_start)
     check_end = parse_time(check_end)
     
-    # Get all classes for the specified day
     all_classes = []
     occupied_rooms = set()
     
@@ -34,11 +33,9 @@ def get_free_classes(json_data, day, check_start, check_end):
             start = parse_time(cls["start"])
             end = parse_time(cls["end"])
             
-            # Check if this class overlaps with our time range
             if time_overlap(start, end, check_start, check_end):
                 occupied_rooms.add(room)
     
-    # Now find all classes that are NOT occupied during this time
     free_classes = []
     
     for batch_key, batch_data in json_data.items():
@@ -49,7 +46,6 @@ def get_free_classes(json_data, day, check_start, check_end):
             start = parse_time(cls["start"])
             end = parse_time(cls["end"])
             
-            # If room is not occupied during our time range, it's free
             if room not in occupied_rooms:
                 free_classes.append({
                     "room": room,
@@ -62,7 +58,6 @@ def get_free_classes(json_data, day, check_start, check_end):
                     "end": cls["end"]
                 })
     
-    # Remove duplicates based on room (since multiple batches might have the same room free)
     unique_free_classes = []
     seen_rooms = set()
     
@@ -82,10 +77,9 @@ def search_teacher(json_data, teacher_name):
     teacher_name = teacher_name.strip().lower()
     teacher_classes = []
     
-    # Get current day and time
     from datetime import datetime
     current_time = datetime.now()
-    current_day = current_time.strftime("%A")  # Monday, Tuesday, etc.
+    current_day = current_time.strftime("%A")
     current_time_obj = current_time.time()
     
     for batch_key, batch_data in json_data.items():
@@ -115,7 +109,6 @@ def search_teacher(json_data, teacher_name):
     return teacher_classes
 
 
-# Load the classes data
 classes_data = None
 try:
     with open("classes.json", encoding="utf-8") as f:
