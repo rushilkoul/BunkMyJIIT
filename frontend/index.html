@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <title>BunkMyJIIT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body class="light-theme">
+        <div class="main">
+            <div class="header">
+                <i id="theme-toggle" class="bi bi-moon"></i>
+                <h1>BunkMyJIIT</h1>
+                <p>Check what venues are unoccupied in JIIT!</p>
+                
+            </div>
+
+            <div class="main-container">
+                <div class="campus-pills">
+                    <div class="campus-pill-background"></div>
+                    <div class="campus-pill active" data-campus="btech-62">Sec-62</div>
+                    <div class="campus-pill" data-campus="btech-128">Sec-128</div>
+                </div>
+                <div class="day-pills">
+                    <div class="pill-background"></div>
+                    <div class="day-pill active" data-day="Monday">Mon</div>
+                    <div class="day-pill" data-day="Tuesday">Tue</div>
+                    <div class="day-pill" data-day="Wednesday">Wed</div>
+                    <div class="day-pill" data-day="Thursday">Thu</div>
+                    <div class="day-pill" data-day="Friday">Fri</div>
+                    <div class="day-pill" data-day="Saturday">Sat</div>
+                </div>
+
+                <div class="time-picker-container">
+                    <label class="time-picker-label">From</label>
+                    <div id="picker_from" class="time-picker" data-label="From"></div>
+                </div>
+                <div class="time-picker-container">
+                    <label class="time-picker-label">To</label>
+                    <div id="picker_to" class="time-picker" data-label="To"></div>
+                </div>
+                <button id="check-button">Check</button>
+            </div>
+            <p id="res"></p>
+        </div>
+
+        <script>
+            const themeToggle = document.getElementById('theme-toggle');
+            
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.body.className = currentTheme + '-theme';
+            updateThemeUI(currentTheme);
+            
+            themeToggle.addEventListener('click', () => {
+                const isDark = document.body.classList.contains('dark-theme');
+                const newTheme = isDark ? 'light' : 'dark';
+                
+                document.body.className = newTheme + '-theme';
+                localStorage.setItem('theme', newTheme);
+                updateThemeUI(newTheme);
+            });
+            
+            function updateThemeUI(theme) {
+                if (theme === 'dark') {
+                    themeToggle.className = 'bi bi-sun';
+                } else {
+                    themeToggle.className = 'bi bi-moon';
+                }
+            }
+
+            // Campus pill selection functionality + persistence
+            const campusPills = document.querySelectorAll('.campus-pill');
+            const campusPillsContainer = document.querySelector('.campus-pills');
+            const campusPillBackground = campusPillsContainer.querySelector('.campus-pill-background');
+
+            const storedCampus = localStorage.getItem('selectedCampus') || 'btech-62';
+            let selectedCampus = storedCampus;
+
+            function repositionCampusPillBackground() {
+                const activePill = campusPillsContainer.querySelector('.campus-pill.active');
+                if (!activePill) return;
+                campusPillBackground.style.left = activePill.offsetLeft + 'px';
+                campusPillBackground.style.width = activePill.offsetWidth + 'px';
+            }
+
+            function setActiveCampus(campus) {
+                campusPills.forEach((p) => {
+                    p.classList.toggle('active', p.dataset.campus === campus);
+                });
+                repositionCampusPillBackground();
+            }
+
+            setActiveCampus(selectedCampus);
+
+            campusPills.forEach((pill) => {
+                pill.addEventListener('click', () => {
+                    selectedCampus = pill.dataset.campus;
+                    localStorage.setItem('selectedCampus', selectedCampus);
+                    setActiveCampus(selectedCampus);
+                });
+            });
+
+            // Day pill selection functionality + persistence
+            const dayPills = document.querySelectorAll('.day-pill');
+            const dayPillsContainer = document.querySelector('.day-pills');
+            const pillBackground = document.querySelector('.pill-background');
+
+            const storedDay = localStorage.getItem('selectedDay') || 'Monday';
+            let selectedDay = storedDay;
+
+            function repositionActivePillBackground() {
+                const activePill = document.querySelector('.day-pill.active');
+                if (!activePill) return;
+                pillBackground.style.left = activePill.offsetLeft + 'px';
+                pillBackground.style.width = activePill.offsetWidth + 'px';
+            }
+
+            function setActiveDay(day) {
+                let activeIndex = 0;
+                dayPills.forEach((p, i) => {
+                    if (p.dataset.day === day) {
+                        activeIndex = i;
+                        p.classList.add('active');
+                    } else {
+                        p.classList.remove('active');
+                    }
+                });
+                repositionActivePillBackground();
+            }
+
+            // Initialize active day from storage (or Monday)
+            setActiveDay(selectedDay);
+
+            dayPills.forEach((pill) => {
+                pill.addEventListener('click', () => {
+                    selectedDay = pill.dataset.day;
+                    localStorage.setItem('selectedDay', selectedDay);
+                    setActiveDay(selectedDay);
+                });
+            });
+
+            // Reposition background on resize (debounced)
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    repositionActivePillBackground();
+                    repositionCampusPillBackground();
+                }, 100);
+            });
+            // Ensure correct position after all assets/fonts load
+            window.addEventListener('load', () => {
+                repositionActivePillBackground();
+                repositionCampusPillBackground();
+            });
+
+            // Custom time pickers (non-native)
+            const pickerFrom = document.getElementById('picker_from');
+            const pickerTo = document.getElementById('picker_to');
+
+            function toAmPm(time24) {
+                if (!time24) return '';
+                const [hh, mm] = time24.split(':');
+                let hours = parseInt(hh, 10);
+                const ampm = hours >= 12 ? 'PM' : 'AM';
+                hours = hours % 12;
+                if (hours === 0) hours = 12;
+                return `${hours}:${mm} ${ampm}`;
+            }
+
+            function amPmTo24h(amPmStr) {
+                if (!amPmStr) return '';
+                const match = amPmStr.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+                if (!match) return '';
+                let hours = parseInt(match[1], 10);
+                const minutes = match[2];
+                const period = match[3].toUpperCase();
+                if (period === 'AM') {
+                    if (hours === 12) hours = 0;
+                } else {
+                    if (hours !== 12) hours += 12;
+                }
+                const hh = String(hours).padStart(2, '0');
+                return `${hh}:${minutes}`;
+            }
+
+            // Backward compatibility: migrate stored values if needed
+            const storedFrom24 = localStorage.getItem('fromTime24');
+            const storedTo24 = localStorage.getItem('toTime24');
+            const legacyFrom = localStorage.getItem('fromTime'); // e.g., "8:00 AM"
+            const legacyTo = localStorage.getItem('toTime');
+
+            const initialFrom = storedFrom24 || (legacyFrom ? amPmTo24h(legacyFrom) : '');
+            const initialTo = storedTo24 || (legacyTo ? amPmTo24h(legacyTo) : '');
+
+            function buildTimePicker(rootEl, storageKey, initial24h, allowedHours, onChange) {
+                rootEl.classList.add('tp-root');
+                rootEl.innerHTML = `
+                    <button type="button" class="time-display" aria-haspopup="listbox" aria-expanded="false"></button>
+                    <div class="time-popover" role="listbox" hidden></div>
+                `;
+                const displayBtn = rootEl.querySelector('.time-display');
+                const popover = rootEl.querySelector('.time-popover');
+
+                // Build options for provided allowed hours
+                const options = [];
+                const hoursToRender = Array.isArray(allowedHours) && allowedHours.length ? allowedHours : Array.from({length: 13}, (_, i) => 8 + i);
+                hoursToRender.forEach((h) => {
+                    const hh = String(h).padStart(2, '0');
+                    const v24 = `${hh}:00`;
+                    const label = toAmPm(v24);
+                    const opt = document.createElement('button');
+                    opt.type = 'button';
+                    opt.className = 'time-option';
+                    opt.setAttribute('role', 'option');
+                    opt.dataset.value24 = v24;
+                    opt.textContent = label;
+                    options.push(opt);
+                    popover.appendChild(opt);
+                });
+
+                function setValue(v24) {
+                    if (!v24) {
+                        displayBtn.textContent = rootEl.dataset.label || 'Time';
+                        rootEl.dataset.value24 = '';
+                        options.forEach(o => o.classList.remove('selected'));
+                        return;
+                    }
+                    displayBtn.textContent = toAmPm(v24);
+                    rootEl.dataset.value24 = v24;
+                    options.forEach(o => {
+                        o.classList.toggle('selected', o.dataset.value24 === v24);
+                    });
+                    localStorage.setItem(storageKey, v24);
+                }
+
+                // Only prefill if a stored value exists and is allowed; otherwise leave blank
+                const allowedSet = new Set(hoursToRender.map(h => `${String(h).padStart(2,'0')}:00`));
+                if (initial24h && allowedSet.has(initial24h)) {
+                    setValue(initial24h);
+                } else {
+                    setValue('');
+                }
+
+                displayBtn.addEventListener('click', () => {
+                    const isHidden = popover.hasAttribute('hidden');
+                    document.querySelectorAll('.time-popover').forEach(p => p.setAttribute('hidden', ''));
+                    if (isHidden) {
+                        popover.removeAttribute('hidden');
+                        displayBtn.setAttribute('aria-expanded', 'true');
+                    } else {
+                        popover.setAttribute('hidden', '');
+                        displayBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                options.forEach(opt => {
+                    opt.addEventListener('click', () => {
+                        const newVal = opt.dataset.value24;
+                        setValue(newVal);
+                        popover.setAttribute('hidden', '');
+                        displayBtn.setAttribute('aria-expanded', 'false');
+                        if (typeof onChange === 'function') onChange(newVal);
+                    });
+                });
+
+                // Close on outside click
+                document.addEventListener('click', (e) => {
+                    if (!rootEl.contains(e.target)) {
+                        popover.setAttribute('hidden', '');
+                        displayBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                return {
+                    get value24() { return rootEl.dataset.value24 || ''; },
+                    set(value24) { setValue(value24); }
+                };
+            }
+
+            // Ranges: From = 07:00–16:00, To = 07:00–17:00
+            const fromHours = Array.from({ length: 10 }, (_, i) => 7 + i); // 7..16
+            const toHours = Array.from({ length: 11 }, (_, i) => 7 + i);   // 7..17
+
+            const toAllowedSet = new Set(toHours.map(h => `${String(h).padStart(2,'0')}:00`));
+
+            const toPicker = buildTimePicker(pickerTo, 'toTime24', initialTo, toHours);
+            const fromPicker = buildTimePicker(pickerFrom, 'fromTime24', initialFrom, fromHours, (newFrom) => {
+                // Always set To = From + 1 hour on From change (within allowed range)
+                const [fh, fm] = newFrom.split(':');
+                const h = parseInt(fh, 10) + 1;
+                const candidate = `${String(h).padStart(2,'0')}:${fm}`;
+                if (toAllowedSet.has(candidate)) {
+                    toPicker.set(candidate);
+                }
+            });
+
+            // Each picker opens its own popover on click (handled inside buildTimePicker)
+
+            document.getElementById("check-button").addEventListener("click", async () => {
+                const fromRaw = fromPicker.value24;
+                const toRaw = toPicker.value24;
+
+                if (!fromRaw || !toRaw) {
+                    alert("Please select a time range.");
+                    return;
+                }
+
+                const response = await fetch("http://127.0.0.1:5000/tabledata", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        campus: selectedCampus,
+                        day: selectedDay,
+                        from: toAmPm(fromRaw),
+                        to: toAmPm(toRaw)
+                    })
+                });
+                const data = await response.json();
+
+                let responseElm = document.getElementById("res");
+                if (data.status === "success") {
+                    if (data.free_classes && data.free_classes.length > 0) {
+                        const freeRooms = data.free_classes.map(cls => cls.room).join(", ");
+                        responseElm.innerText = `Free rooms: ${freeRooms}`;
+                    } else {
+                        responseElm.innerText = "No free rooms found for the selected time.";
+                    }
+                } else {
+                    responseElm.innerText = `Error: ${data.message || "Unknown error"}`;
+                }
+            });
+        </script>
+    </body>
+</html>
