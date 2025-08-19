@@ -56,6 +56,15 @@ body {
     margin-bottom: 1rem;
 }
 
+.header > h1 {
+    font-weight: normal;
+}
+
+h1 > em {
+    font-style: normal;
+    font-weight: 800;
+}
+
 h1 {
     margin-bottom: 0;
 }
@@ -310,6 +319,7 @@ button:active {
     display: flex;
     flex-wrap: wrap;
     gap: .75rem;
+    justify-content: space-evenly;
 }
 
 .free-class {
@@ -324,9 +334,17 @@ button:active {
     gap: 0.75rem;
     transition: background-color 0.2s ease;
     font-size: 1.25rem;
-    min-width: 175px;
     box-shadow: 0px 4px var(--box-shadow-color);
+    flex-grow: 1;
+    width: 20%;
 }
+
+@media (max-width: 768px) {
+    .free-class {
+        width: 30%;
+    }
+}
+
 .free-class > div {
     display: flex;
     flex-direction: column;
