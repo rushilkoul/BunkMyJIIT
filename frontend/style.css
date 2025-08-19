@@ -375,6 +375,19 @@ pre {
         width: 100%;
     }
 }
+@media (max-width: 525px) {
+    .tp-root {
+        width: 100%;
+    }
+
+    .tp-root .time-display {
+        width: 100% !important;
+    }
+
+    .time-picker-container {
+        flex-grow: 1;
+    }
+}
 
 .free-class > div {
     display: flex;
