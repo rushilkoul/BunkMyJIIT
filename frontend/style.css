@@ -64,7 +64,7 @@ a{
 .header > div {
     display: flex;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 i {
@@ -74,7 +74,8 @@ i {
 .header > div > div {
     padding-bottom: 10px;
     display: flex;
-    gap: 0.75rem;
+    gap: 1rem;
+    font-size: 1.25rem;
 }
 
 .header > div > h1 {
