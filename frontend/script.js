@@ -269,6 +269,7 @@ function showTimeValidationError() {
         fromContainer.classList.remove('time-error');
         toContainer.classList.remove('time-error');
         responseElm.classList.remove('error-message');
+        responseElm.innerText = "";
     }, 2000);
 }
 

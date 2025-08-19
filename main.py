@@ -114,6 +114,8 @@ def search_teacher_endpoint():
         }), 500
 
 
+# apparently Vercel never runs the main block 
+# so its actually fine to leave this in
+# i can test locally again wooooo
 if __name__ == "__main__":
-    # app.run()
-    pass
+    app.run(debug=True)
