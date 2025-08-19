@@ -103,6 +103,7 @@ p {
     gap: 1rem;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .campus-pills {
@@ -362,9 +363,16 @@ button:active {
     width: 20%;
 }
 
+pre {
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .free-class {
         width: 30%;
+    }
+    button {
+        width: 100%;
     }
 }
 
