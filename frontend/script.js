@@ -279,7 +279,7 @@ function populateAvailableRooms(rooms) {
     roomArray.forEach(room => {
         let roomDiv = document.createElement("div");
         roomDiv.className = "free-class";
-        roomDiv.innerHTML = `<i class="bi bi-lightning-fill"></i><h1>${room}</h1>`;
+        roomDiv.innerHTML = `<i class="bi bi-backpack2"></i><div><h1>${room}</h1><p>Available</p></div>`;
         responseParent.appendChild(roomDiv);
     });
     // trim whitespace 
@@ -295,7 +295,7 @@ document.getElementById("check-button").addEventListener("click", async () => {
         return;
     }
 
-    const response = await fetch("http://192.168.1.2:5000/tabledata", {
+    const response = await fetch("http://192.168.1.10:5000/tabledata", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
