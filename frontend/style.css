@@ -59,6 +59,7 @@ body {
 a{
     color: var(--text-color);
     text-decoration: none;
+    margin: 0;
 }
 
 .header > div {
@@ -382,4 +383,10 @@ button:active {
 .free-class > div > h1 {
     margin: 0;
     font-size: 1.25rem;
+}
+
+p.name {
+    font-weight: 300;
+    font-size: 0.75rem;
+    margin: 0;
 }
