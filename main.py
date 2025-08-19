@@ -24,7 +24,7 @@ def frontend_files(filename):
     return send_from_directory("./frontend", filename)
 
 
-@app.route("/tabledata", methods=["POST"])
+@app.route("/api/tabledata", methods=["POST"])
 def get_free_classes_endpoint():
     """Endpoint to get free classes for a specific day and time range"""
     print("Received a request for free classes")
@@ -69,7 +69,7 @@ def get_free_classes_endpoint():
         }), 500
 
 
-@app.route("/teacher", methods=["POST"])
+@app.route("/api/teacher", methods=["POST"])
 def search_teacher_endpoint():
     """Endpoint to search for a teacher and get their current class"""
     print("Received a request to search for teacher")

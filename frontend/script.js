@@ -295,7 +295,7 @@ document.getElementById("check-button").addEventListener("click", async () => {
         return;
     }
 
-    const response = await fetch("http://192.168.1.10:5000/tabledata", {
+    const response = await fetch("/api/tabledata", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
