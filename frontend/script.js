@@ -313,6 +313,21 @@ document.getElementById("check-button").addEventListener("click", async () => {
         if (data.free_classes && data.free_classes.length > 0) {
             const freeRooms = data.free_classes.map(cls => cls.room).join(", ");
             populateAvailableRooms(freeRooms);
+            // Add fade-in animation
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-on-scroll');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.free-class').forEach(card => {
+                requestAnimationFrame(() => {
+                    observer.observe(card);
+                });
+            });
         } else {
             responseElm.innerText = "No free rooms found for the selected time.";
         }
