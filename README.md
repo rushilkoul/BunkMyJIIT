@@ -10,12 +10,10 @@ A (WIP) web app that lets you know what classes are free at both JIIT-62 and JII
 python -m pip install -r requirements.txt
 
 # run the app
-python check.py
+python main.py
 ```
 
 App is hosted onto `127.0.0.1:5000`
-> You also need to update the endpoint in `frontend/script.js` to point to your local address instead *(it's not by default)*
->
 
 # Resources
 BunkMyJIIT uses JSON files from the [JPoop Planner CDN](https://github.com/codelif/jiit-planner-cdn) for the data. [do check it out](https://github.com/codelif/jpoop-planner), its very cool
