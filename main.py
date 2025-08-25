@@ -2,17 +2,26 @@ from flask import Flask, request, jsonify, send_from_directory
 import json
 import util
 from flask_cors import CORS
-import pandas as pd
+from openpyxl import load_workbook
 
-df = pd.read_excel('RoomLocation.xlsx', usecols=['ROOMID', 'BUILDING', 'FLOOR'])
+# Load workbook and sheet
+wb = load_workbook("RoomLocation.xlsx", data_only=True)
+ws = wb.active  # or wb["SheetName"] if you know the sheet
 
-room_lookup = {
-    str(row['ROOMID']): f"{row['BUILDING']} ({row['FLOOR']})"
-    for _, row in df.iterrows()
-}
+# Find header row mapping
+headers = {cell.value: idx for idx, cell in enumerate(ws[1], start=1)}
+
+room_lookup = {}
+for row in ws.iter_rows(min_row=2, values_only=True):  # skip header
+    room_id = str(row[headers['ROOMID'] - 1])
+    building = row[headers['BUILDING'] - 1]
+    floor = row[headers['FLOOR'] - 1]
+
+    room_lookup[room_id] = f"{building} ({floor})"
 
 def getLocation(roomID):
     return room_lookup.get(str(roomID), None)
+
 
 classes_data = None
 try:
