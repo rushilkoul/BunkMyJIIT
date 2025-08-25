@@ -2,21 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 import json
 import util
 from flask_cors import CORS
-import csv
-
-room_lookup = {}
-
-with open("RoomLocation.csv", newline="", encoding="utf-8") as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-        room_id = str(row["ROOMID"])
-        building = row["BUILDING"]
-        floor = row["FLOOR"]
-        room_lookup[room_id] = f"{building} ({floor})"
-
-def getLocation(roomID):
-    return room_lookup.get(str(roomID), None)
-
+from getRoomLocation import getLocation
 
 classes_data = None
 try:
