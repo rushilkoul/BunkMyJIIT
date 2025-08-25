@@ -289,6 +289,7 @@ async function populateAvailableRooms(rooms) {
     responseParent.innerHTML = '';
 
     let locations = await getRoomLocations(roomArray);
+    console.log(locations)
 
     roomArray.forEach(room => {
         let roomLocation = locations[room] || " ";
