@@ -273,15 +273,25 @@ function showTimeValidationError() {
     }, 2000);
 }
 
+async function getRoomLocations(roomIDs) {
+    const response = await fetch("/api/getRoomLocations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ room_ids: roomIDs })
+    });
+    const data = await response.json();
+    return data.locations || {};
+}
+
 async function populateAvailableRooms(rooms) {
-    let roomArray = rooms.split(',').map(room => room.trim());
+    let roomArray = rooms.split(",").map(room => room.trim());
     let responseParent = document.querySelector(".responses-container");
     responseParent.innerHTML = '';
 
-    let locations = await Promise.all(roomArray.map(room => getRoomLocation(room)));
+    let locations = await getRoomLocations(roomArray);
 
-    roomArray.forEach((room, i) => {
-        let roomLocation = locations[i] || " "; // fallback
+    roomArray.forEach(room => {
+        let roomLocation = locations[room] || " ";
         let roomDiv = document.createElement("div");
         roomDiv.className = "free-class";   
         roomDiv.innerHTML = `
@@ -294,18 +304,6 @@ async function populateAvailableRooms(rooms) {
     });
 }
 
-async function getRoomLocation(roomID) {
-    const response = await fetch("/api/getRoomLocation", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            room_id: roomID
-        })
-    });
-    const data = await response.json();
-    return data.message;
-
-}
 
 document.getElementById("check-button").addEventListener("click", async () => {
     const fromRaw = fromPicker.value24;

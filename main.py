@@ -4,6 +4,7 @@ import util
 from flask_cors import CORS
 from getRoomLocation import getLocation
 
+
 classes_data = None
 try:
     with open("classes.json", encoding="utf-8") as f:
@@ -69,19 +70,25 @@ def get_free_classes_endpoint():
             "message": str(e)
         }), 500
 
-
-@app.route("/api/getRoomLocation", methods=["POST"])
-def getRoomLoc():
-    """Endpoint to search the room name and find location"""
+@app.route("/api/getRoomLocations", methods=["POST"])
+def getRoomLocs():
+    """Endpoint to search multiple room names and find locations"""
     try:
         data = request.get_json()
-        room_id = data.get('room_id')
-        loc = getLocation(room_id)
-        response_data = {
+        room_ids = data.get("room_ids", [])
+
+        if not isinstance(room_ids, list):
+            return jsonify({
+                "status": "error",
+                "message": "room_ids must be a list"
+            }), 400
+
+        results = {str(rid): getLocation(rid) for rid in room_ids}
+
+        return jsonify({
             "status": "success",
-            "message": loc,
-        }
-        return jsonify(response_data)
+            "locations": results
+        })
     except Exception as e:
         return jsonify({
             "status": "error",
