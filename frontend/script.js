@@ -277,16 +277,21 @@ async function populateAvailableRooms(rooms) {
     let roomArray = rooms.split(',').map(room => room.trim());
     let responseParent = document.querySelector(".responses-container");
     responseParent.innerHTML = '';
-    for (const room of roomArray) {
-        // let roomLocation = await getRoomLocation(room);
-        // if (roomLocation == null) roomLocation = " "; // set it to be empty for now
 
+    let locations = await Promise.all(roomArray.map(room => getRoomLocation(room)));
+
+    roomArray.forEach((room, i) => {
+        let roomLocation = locations[i] || " "; // fallback
         let roomDiv = document.createElement("div");
         roomDiv.className = "free-class";   
-        roomDiv.innerHTML = `<i class="bi bi-backpack2"></i><div><h1>${room}<p>roomloc</p></h1><p>Available</p></div>`;
+        roomDiv.innerHTML = `
+            <i class="bi bi-backpack2"></i>
+            <div>
+                <h1>${room}<p>${roomLocation}</p></h1>
+                <p>Available</p>
+            </div>`;
         responseParent.appendChild(roomDiv);
-    }
-    // trim whitespace 
+    });
 }
 
 async function getRoomLocation(roomID) {
