@@ -286,6 +286,20 @@ function populateAvailableRooms(rooms) {
     // trim whitespace 
 
 }
+
+async function getRoomLocation(roomID) {
+    const response = await fetch("/api/getRoomLocation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            room_id: roomID
+        })
+    });
+    const data = await response.json();
+    alert(data.message)
+
+}
+
 document.getElementById("check-button").addEventListener("click", async () => {
     const fromRaw = fromPicker.value24;
     const toRaw = toPicker.value24;
