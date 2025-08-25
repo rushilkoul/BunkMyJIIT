@@ -278,12 +278,12 @@ async function populateAvailableRooms(rooms) {
     let responseParent = document.querySelector(".responses-container");
     responseParent.innerHTML = '';
     for (const room of roomArray) {
-        let roomLocation = await getRoomLocation(room);
-        if (roomLocation == null) roomLocation = " "; // set it to be empty for now
+        // let roomLocation = await getRoomLocation(room);
+        // if (roomLocation == null) roomLocation = " "; // set it to be empty for now
 
         let roomDiv = document.createElement("div");
         roomDiv.className = "free-class";   
-        roomDiv.innerHTML = `<i class="bi bi-backpack2"></i><div><h1>${room}<p>${roomLocation}</p></h1><p>Available</p></div>`;
+        roomDiv.innerHTML = `<i class="bi bi-backpack2"></i><div><h1>${room}<p>roomloc</p></h1><p>Available</p></div>`;
         responseParent.appendChild(roomDiv);
     }
     // trim whitespace 
