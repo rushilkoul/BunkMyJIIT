@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_excel('RoomLocation.xlsx', usecols=['ROOMID', 'BUILDING', 'FLOOR'])
 
 room_lookup = {
-    str(row['ROOMID']): f"{row['BUILDING']}_{row['FLOOR']}"
+    str(row['ROOMID']): f"{row['BUILDING']} ({row['FLOOR']})"
     for _, row in df.iterrows()
 }
 

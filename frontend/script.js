@@ -273,18 +273,20 @@ function showTimeValidationError() {
     }, 2000);
 }
 
-function populateAvailableRooms(rooms) {
+async function populateAvailableRooms(rooms) {
     let roomArray = rooms.split(',').map(room => room.trim());
     let responseParent = document.querySelector(".responses-container");
     responseParent.innerHTML = '';
-    roomArray.forEach(room => {
-        let roomDiv = document.createElement("div");
-        roomDiv.className = "free-class";
-        roomDiv.innerHTML = `<i class="bi bi-backpack2"></i><div><h1>${room}</h1><p>Available</p></div>`;
-        responseParent.appendChild(roomDiv);
-    });
-    // trim whitespace 
+    for (const room of roomArray) {
+        let roomLocation = await getRoomLocation(room);
+        if (roomLocation == null) roomLocation = " "; // set it to be empty for now
 
+        let roomDiv = document.createElement("div");
+        roomDiv.className = "free-class";   
+        roomDiv.innerHTML = `<i class="bi bi-backpack2"></i><div><h1>${room}<p>${roomLocation}</p></h1><p>Available</p></div>`;
+        responseParent.appendChild(roomDiv);
+    }
+    // trim whitespace 
 }
 
 async function getRoomLocation(roomID) {
@@ -296,7 +298,7 @@ async function getRoomLocation(roomID) {
         })
     });
     const data = await response.json();
-    alert(data.message)
+    return data.message;
 
 }
 
@@ -326,7 +328,7 @@ document.getElementById("check-button").addEventListener("click", async () => {
     if (data.status === "success") {
         if (data.free_classes && data.free_classes.length > 0) {
             const freeRooms = data.free_classes.map(cls => cls.room).join(", ");
-            populateAvailableRooms(freeRooms);
+            await populateAvailableRooms(freeRooms);
             // Add fade-in animation
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
