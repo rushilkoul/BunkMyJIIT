@@ -292,14 +292,14 @@ async function populateAvailableRooms(rooms) {
     console.log(locations)
 
     roomArray.forEach(room => {
-        let roomLocation = locations[room] || " ";
+        let roomLocation = locations[room] ? `• ${locations[room]}` : " ";
         let roomDiv = document.createElement("div");
         roomDiv.className = "free-class";   
         roomDiv.innerHTML = `
             <i class="bi bi-backpack2"></i>
             <div>
-                <h1>${room}<p>${roomLocation}</p></h1>
-                <p>Available</p>
+                <h1>${room}</h1>
+                <p>Available <span> ${roomLocation}</span></p>
             </div>`;
         responseParent.appendChild(roomDiv);
     });

@@ -389,6 +389,11 @@ pre {
         flex-grow: 1;
     }
 }
+@media (max-width: 471px) {
+    .free-class {
+        width: 55%;
+    }
+}
 
 .free-class > div {
     display: flex;
@@ -422,7 +427,8 @@ p.name {
     animation: fade-in-animation 0.6s ease-out forwards;
 }
 
-.free-class > div > h1 > p {
+.free-class > div > p > span {
+    color: var(--text-color);
     font-size: 0.75rem;
     font-weight: 200;
     opacity: 0.7;
