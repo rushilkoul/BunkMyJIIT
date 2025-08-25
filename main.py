@@ -2,7 +2,17 @@ from flask import Flask, request, jsonify, send_from_directory
 import json
 import util
 from flask_cors import CORS
-from getRoomLocation import getLocation
+import pandas as pd
+
+df = pd.read_excel('RoomLocation.xlsx', usecols=['ROOMID', 'BUILDING', 'FLOOR'])
+
+room_lookup = {
+    str(row['ROOMID']): f"{row['BUILDING']} ({row['FLOOR']})"
+    for _, row in df.iterrows()
+}
+
+def getLocation(roomID):
+    return room_lookup.get(str(roomID), None)
 
 classes_data = None
 try:
@@ -70,23 +80,23 @@ def get_free_classes_endpoint():
         }), 500
 
 
-# @app.route("/api/getRoomLocation", methods=["POST"])
-# def getRoomLoc():
-#     """Endpoint to search the room name and find location"""
-#     try:
-#         data = request.get_json()
-#         room_id = data.get('room_id')
-#         loc = getLocation(room_id)
-#         response_data = {
-#             "status": "success",
-#             "message": loc,
-#         }
-#         return jsonify(response_data)
-#     except Exception as e:
-#         return jsonify({
-#             "status": "error",
-#             "message": str(e)
-#         }), 500
+@app.route("/api/getRoomLocation", methods=["POST"])
+def getRoomLoc():
+    """Endpoint to search the room name and find location"""
+    try:
+        data = request.get_json()
+        room_id = data.get('room_id')
+        loc = getLocation(room_id)
+        response_data = {
+            "status": "success",
+            "message": loc,
+        }
+        return jsonify(response_data)
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
 
         
 @app.route("/api/teacher", methods=["POST"])
