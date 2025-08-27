@@ -296,7 +296,7 @@ async function populateAvailableRooms(rooms) {
         let roomDiv = document.createElement("div");
         roomDiv.className = "free-class";   
         roomDiv.innerHTML = `
-            <i class="bi bi-backpack2"></i>
+            <i class="bi bi-geo-alt-fill"></i>
             <div>
                 <h1>${room}</h1>
                 <p>Available <span> ${roomLocation}</span></p>
