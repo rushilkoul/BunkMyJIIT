@@ -76,9 +76,6 @@ def getRoomLocs():
     try:
         data = request.get_json()
         room_ids = data.get("room_ids", [])
-        print("Received room_ids:", room_ids)
-        for rid in room_ids:
-            print(f"Looking up: {rid!r}, result: {getLocation(str(rid).strip())!r}")
 
         if not isinstance(room_ids, list):
             return jsonify({

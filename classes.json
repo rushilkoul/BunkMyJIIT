@@ -1,6 +1,6 @@
 {
     "btech-128_sem1_phase1_e1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -216,11 +216,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Niraj Kumar, Prabhakar Jha, Sumit Mahajan, RAVI",
+                    "teacher": "Niraj Kumar, RAVI",
                     "batches": [
-                        "E1",
-                        "E2",
-                        "H4"
+                        "E1"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -232,7 +230,7 @@
                     "end": "12:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "KNS",
+                    "teacher": "NAVED",
                     "batches": [
                         "E1"
                     ],
@@ -299,12 +297,12 @@
         }
     },
     "btech-128_sem1_phase1_e2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
-                    "start": "09:00 AM",
-                    "end": "09:50 AM",
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
                     "subject": "Basic Electronics",
                     "subjectcode": "24B11EC111",
                     "teacher": "PRK",
@@ -398,7 +396,7 @@
                     "end": "02:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI111",
-                    "teacher": "KNS",
+                    "teacher": "NAVED",
                     "batches": [
                         "E2"
                     ],
@@ -515,11 +513,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Niraj Kumar, Prabhakar Jha, Sumit Mahajan, RAVI",
+                    "teacher": "Prabhakar Jha",
                     "batches": [
-                        "E1",
-                        "E2",
-                        "H4"
+                        "E2"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -598,7 +594,7 @@
         }
     },
     "btech-128_sem1_phase1_e3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -763,7 +759,7 @@
                     "end": "04:50 PM",
                     "subject": "Basic Electronics",
                     "subjectcode": "24B11EC111",
-                    "teacher": "Megha Agarwal",
+                    "teacher": "MEA",
                     "batches": [
                         "E3"
                     ],
@@ -803,10 +799,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Prabhakar Jha, Niraj Kumar, RAVI",
+                    "teacher": "Prabhakar Jha, RAVI",
                     "batches": [
-                        "E3",
-                        "E4"
+                        "E3"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -896,7 +891,7 @@
         }
     },
     "btech-128_sem1_phase1_e4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -931,6 +926,18 @@
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
                     "teacher": "Twinkle Tyagi",
+                    "batches": [
+                        "E4"
+                    ],
+                    "venue": "116",
+                    "type": "T"
+                },
+                {
+                    "start": "12:00 PM",
+                    "end": "12:50 PM",
+                    "subject": "Basic Electronics",
+                    "subjectcode": "24B11EC111",
+                    "teacher": "MEA",
                     "batches": [
                         "E4"
                     ],
@@ -1075,7 +1082,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "ANKIT, Shariq Murtuza, Twinkle Tyagi, SAMARTH JAIN",
+                    "teacher": "ANKIT, VAIBHAV, Twinkle Tyagi, SAMARTH JAIN",
                     "batches": [
                         "E4",
                         "F18",
@@ -1095,18 +1102,6 @@
                     ],
                     "venue": "41",
                     "type": "P"
-                },
-                {
-                    "start": "04:00 PM",
-                    "end": "04:50 PM",
-                    "subject": "Basic Electronics",
-                    "subjectcode": "24B11EC111",
-                    "teacher": "MEA",
-                    "batches": [
-                        "E4"
-                    ],
-                    "venue": "116",
-                    "type": "T"
                 }
             ],
             "Friday": [
@@ -1115,9 +1110,8 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Prabhakar Jha, Niraj Kumar, RAVI",
+                    "teacher": "Niraj Kumar",
                     "batches": [
-                        "E3",
                         "E4"
                     ],
                     "venue": "EDD/CADD03",
@@ -1156,7 +1150,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "Divya Kaushik, RAS",
+                    "teacher": "Divya Kaushik, Ajit Kumar",
                     "batches": [
                         "E4"
                     ],
@@ -1194,7 +1188,7 @@
         }
     },
     "btech-128_sem1_phase1_f1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -1202,11 +1196,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Prabhakar Jha, Harish Bishwakarma, Niraj Kumar, JUGENDRA SINGH",
+                    "teacher": "PRJ(NIK)",
                     "batches": [
-                        "F1",
-                        "F2",
-                        "F21"
+                        "F1"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -1394,6 +1386,18 @@
                     ],
                     "venue": "117",
                     "type": "L"
+                },
+                {
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
+                    "subject": "Mathematics-1",
+                    "subjectcode": "15B11MA111",
+                    "teacher": "Kamlesh Kumar Shukla",
+                    "batches": [
+                        "F1"
+                    ],
+                    "venue": "SR05",
+                    "type": "T"
                 }
             ],
             "Friday": [
@@ -1403,6 +1407,19 @@
                     "subject": "Basic Electronics",
                     "subjectcode": "24B11EC111",
                     "teacher": "Bhartendu Chaturvedi",
+                    "batches": [
+                        "F1",
+                        "F2"
+                    ],
+                    "venue": "123",
+                    "type": "L"
+                },
+                {
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
+                    "subject": "Physics-1",
+                    "subjectcode": "15B11PH111",
+                    "teacher": "Amit Verma",
                     "batches": [
                         "F1",
                         "F2"
@@ -1428,19 +1445,6 @@
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
                     "teacher": "Pankaj Kumar Srivastava",
-                    "batches": [
-                        "F1",
-                        "F2"
-                    ],
-                    "venue": "SR05",
-                    "type": "L"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
-                    "subject": "Physics-1",
-                    "subjectcode": "15B11PH111",
-                    "teacher": "Amit Verma",
                     "batches": [
                         "F1",
                         "F2"
@@ -1481,7 +1485,7 @@
         }
     },
     "btech-128_sem1_phase1_f2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -1489,11 +1493,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Prabhakar Jha, Harish Bishwakarma, Niraj Kumar, JUGENDRA SINGH",
+                    "teacher": "Harish Bishwakarma, JUGENDRA SINGH",
                     "batches": [
-                        "F1",
-                        "F2",
-                        "F21"
+                        "F2"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -1503,7 +1505,7 @@
                     "end": "02:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "Megha Agarwal, Ravi Prakash Verma",
+                    "teacher": "MEA, Ravi Prakash Verma",
                     "batches": [
                         "F2"
                     ],
@@ -1686,6 +1688,19 @@
                     "type": "L"
                 },
                 {
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
+                    "subject": "Physics-1",
+                    "subjectcode": "15B11PH111",
+                    "teacher": "Amit Verma",
+                    "batches": [
+                        "F1",
+                        "F2"
+                    ],
+                    "venue": "123",
+                    "type": "L"
+                },
+                {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
                     "subject": "24B11EC111-121/BH",
@@ -1703,19 +1718,6 @@
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
                     "teacher": "Pankaj Kumar Srivastava",
-                    "batches": [
-                        "F1",
-                        "F2"
-                    ],
-                    "venue": "SR05",
-                    "type": "L"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
-                    "subject": "Physics-1",
-                    "subjectcode": "15B11PH111",
-                    "teacher": "Amit Verma",
                     "batches": [
                         "F1",
                         "F2"
@@ -1780,7 +1782,7 @@
         }
     },
     "btech-128_sem1_phase1_f3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -1826,11 +1828,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Sumit Mahajan, Piyush Sharma, Rahul Kumar",
+                    "teacher": "Sumit Mahajan",
                     "batches": [
-                        "F3",
-                        "F4",
-                        "F22"
+                        "F3"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -1919,9 +1919,9 @@
                 {
                     "start": "09:00 AM",
                     "end": "09:50 AM",
-                    "subject": "Software Development Fundamentals-I",
-                    "subjectcode": "15B11CI1111",
-                    "teacher": "Akanksha Bhardwaj",
+                    "subject": "Basic Electronics",
+                    "subjectcode": "24B11EC111",
+                    "teacher": "Ruchi Singh",
                     "batches": [
                         "F3",
                         "F4"
@@ -1932,9 +1932,9 @@
                 {
                     "start": "10:00 AM",
                     "end": "10:50 AM",
-                    "subject": "Basic Electronics",
-                    "subjectcode": "24B11EC111",
-                    "teacher": "Ruchi Singh",
+                    "subject": "Software Development Fundamentals-I",
+                    "subjectcode": "15B11CI1111",
+                    "teacher": "Akanksha Bhardwaj",
                     "batches": [
                         "F3",
                         "F4"
@@ -2079,7 +2079,7 @@
         }
     },
     "btech-128_sem1_phase1_f4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -2125,11 +2125,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Sumit Mahajan, Piyush Sharma, Rahul Kumar",
+                    "teacher": "Piyush Sharma",
                     "batches": [
-                        "F3",
-                        "F4",
-                        "F22"
+                        "F4"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -2204,7 +2202,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Akanksha Bhardwaj, Twinkle Tyagi, Vikas Sharma, Jatin",
+                    "teacher": "VAIBHAV, Twinkle Tyagi, ZUBAIR, Jatin",
                     "batches": [
                         "F4",
                         "F5",
@@ -2218,9 +2216,9 @@
                 {
                     "start": "09:00 AM",
                     "end": "09:50 AM",
-                    "subject": "Software Development Fundamentals-I",
-                    "subjectcode": "15B11CI1111",
-                    "teacher": "Akanksha Bhardwaj",
+                    "subject": "Basic Electronics",
+                    "subjectcode": "24B11EC111",
+                    "teacher": "Ruchi Singh",
                     "batches": [
                         "F3",
                         "F4"
@@ -2231,9 +2229,9 @@
                 {
                     "start": "10:00 AM",
                     "end": "10:50 AM",
-                    "subject": "Basic Electronics",
-                    "subjectcode": "24B11EC111",
-                    "teacher": "Ruchi Singh",
+                    "subject": "Software Development Fundamentals-I",
+                    "subjectcode": "15B11CI1111",
+                    "teacher": "Akanksha Bhardwaj",
                     "batches": [
                         "F3",
                         "F4"
@@ -2378,7 +2376,7 @@
         }
     },
     "btech-128_sem1_phase1_f5": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -2437,11 +2435,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Rahul Kumar, Harish Bishwakarma, Piyush Sharma",
+                    "teacher": "AEB",
                     "batches": [
-                        "F5",
-                        "F6",
-                        "F18"
+                        "F5"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -2504,7 +2500,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Akanksha Bhardwaj, Twinkle Tyagi, Vikas Sharma, Jatin",
+                    "teacher": "VAIBHAV, Twinkle Tyagi, ZUBAIR, Jatin",
                     "batches": [
                         "F4",
                         "F5",
@@ -2677,7 +2673,7 @@
         }
     },
     "btech-128_sem1_phase1_f6": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -2724,11 +2720,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Rahul Kumar, Harish Bishwakarma, Piyush Sharma",
+                    "teacher": "HAB (RAK)",
                     "batches": [
-                        "F5",
-                        "F6",
-                        "F18"
+                        "F6"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -2803,7 +2797,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Akanksha Bhardwaj, Twinkle Tyagi, Vikas Sharma, Jatin",
+                    "teacher": "VAIBHAV, Twinkle Tyagi, ZUBAIR, Jatin",
                     "batches": [
                         "F4",
                         "F5",
@@ -2854,15 +2848,15 @@
                     "type": "L"
                 },
                 {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
                     "subject": "Basic Electronics",
                     "subjectcode": "24B11EC111",
                     "teacher": "PRK",
                     "batches": [
                         "F6"
                     ],
-                    "venue": "116",
+                    "venue": "126",
                     "type": "T"
                 }
             ],
@@ -2976,7 +2970,7 @@
         }
     },
     "btech-128_sem1_phase1_f7": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -2984,7 +2978,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Akanksha Bhardwaj, SHG, Niveditta Batra, SAMARTH JAIN",
+                    "teacher": "Akanksha Bhardwaj, ZUBAIR, Niveditta Batra, SAMARTH JAIN",
                     "batches": [
                         "F7",
                         "F8",
@@ -3076,11 +3070,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Niraj Kumar, Sumit Mahajan, Prabhakar Jha, RAVI",
+                    "teacher": "Niraj Kumar, RAVI",
                     "batches": [
-                        "F7",
-                        "F8",
-                        "F17"
+                        "F7"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -3275,7 +3267,7 @@
         }
     },
     "btech-128_sem1_phase1_f8": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -3283,7 +3275,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Akanksha Bhardwaj, SHG, Niveditta Batra, SAMARTH JAIN",
+                    "teacher": "Akanksha Bhardwaj, ZUBAIR, Niveditta Batra, SAMARTH JAIN",
                     "batches": [
                         "F7",
                         "F8",
@@ -3327,7 +3319,7 @@
                     "batches": [
                         "F8"
                     ],
-                    "venue": "240",
+                    "venue": "246",
                     "type": "P"
                 }
             ],
@@ -3375,11 +3367,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Niraj Kumar, Sumit Mahajan, Prabhakar Jha, RAVI",
+                    "teacher": "Sumit Mahajan",
                     "batches": [
-                        "F7",
-                        "F8",
-                        "F17"
+                        "F8"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -3416,7 +3406,7 @@
                     "end": "02:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "Ankur Gupta, RAS",
+                    "teacher": "HIG, RAS",
                     "batches": [
                         "F8"
                     ],
@@ -3574,7 +3564,7 @@
         }
     },
     "btech-128_sem1_phase1_f9": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -3582,7 +3572,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Akanksha Bhardwaj, SHG, Niveditta Batra, SAMARTH JAIN",
+                    "teacher": "Akanksha Bhardwaj, ZUBAIR, Niveditta Batra, SAMARTH JAIN",
                     "batches": [
                         "F7",
                         "F8",
@@ -3616,6 +3606,18 @@
                     ],
                     "venue": "118",
                     "type": "L"
+                },
+                {
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
+                    "subject": "Basic Electronics",
+                    "subjectcode": "24B11EC111",
+                    "teacher": "Kumar Mohit",
+                    "batches": [
+                        "F9"
+                    ],
+                    "venue": "116",
+                    "type": "T"
                 }
             ],
             "Tuesday": [
@@ -3807,11 +3809,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Sumit Mahajan, Rahul Kumar, Piyush Sharma",
+                    "teacher": "Sumit Mahajan",
                     "batches": [
-                        "F9",
-                        "F10",
-                        "H1"
+                        "F9"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -3823,7 +3823,7 @@
                     "end": "10:50 AM",
                     "subject": "English",
                     "subjectcode": "15B1HS112",
-                    "teacher": "MEENAKSHI",
+                    "teacher": "Ekta Srivastava",
                     "batches": [
                         "F9"
                     ],
@@ -3861,7 +3861,7 @@
         }
     },
     "btech-128_sem1_phase1_f10": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -3869,7 +3869,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "Nilufar Yasmin, BKM",
+                    "teacher": "Nilufar Yasmin, Vimal Kumar Mishra",
                     "batches": [
                         "F10"
                     ],
@@ -3907,7 +3907,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Arti Jain, Anuj Kumar, Niveditta Batra, Baibhav",
+                    "teacher": "Twinkle Tyagi, Anuj Kumar, Niveditta Batra, Baibhav",
                     "batches": [
                         "F10",
                         "F11",
@@ -4118,11 +4118,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Sumit Mahajan, Rahul Kumar, Piyush Sharma",
+                    "teacher": "Rahul Kumar",
                     "batches": [
-                        "F9",
-                        "F10",
-                        "H1"
+                        "F10"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -4160,7 +4158,7 @@
         }
     },
     "btech-128_sem1_phase1_f11": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -4207,7 +4205,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Arti Jain, Anuj Kumar, Niveditta Batra, Baibhav",
+                    "teacher": "Twinkle Tyagi, Anuj Kumar, Niveditta Batra, Baibhav",
                     "batches": [
                         "F10",
                         "F11",
@@ -4327,11 +4325,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Harish Bishwakarma, Rahul Kumar, Sumit Mahajan, JUGENDRA SINGH",
+                    "teacher": "AEB, JUGENDRA SINGH",
                     "batches": [
-                        "F11",
-                        "F12",
-                        "H2"
+                        "F11"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -4447,7 +4443,7 @@
                     "end": "12:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "Arti Jain",
+                    "teacher": "NAVED",
                     "batches": [
                         "F11"
                     ],
@@ -4459,7 +4455,7 @@
         }
     },
     "btech-128_sem1_phase1_f12": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -4506,7 +4502,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Arti Jain, Anuj Kumar, Niveditta Batra, Baibhav",
+                    "teacher": "Twinkle Tyagi, Anuj Kumar, Niveditta Batra, Baibhav",
                     "batches": [
                         "F10",
                         "F11",
@@ -4522,7 +4518,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "Megha Agarwal, Vinay Anand Tikkiwal",
+                    "teacher": "MEA, Vinay Anand Tikkiwal",
                     "batches": [
                         "F12"
                     ],
@@ -4614,11 +4610,9 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Harish Bishwakarma, Rahul Kumar, Sumit Mahajan, JUGENDRA SINGH",
+                    "teacher": "Rahul Kumar",
                     "batches": [
-                        "F11",
-                        "F12",
-                        "H2"
+                        "F12"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -4652,10 +4646,10 @@
                 },
                 {
                     "start": "12:00 PM",
-                    "end": "12:50 PM",
+                    "end": "01:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "Arti Jain",
+                    "teacher": "NAVED",
                     "batches": [
                         "F12"
                     ],
@@ -4758,7 +4752,7 @@
         }
     },
     "btech-128_sem1_phase1_f13": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -4937,11 +4931,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Piyush Sharma, Rahul Kumar, Harish Bishwakarma, JUGENDRA SINGH",
+                    "teacher": "PSH (SUM)",
                     "batches": [
-                        "F13",
-                        "F14",
-                        "H3"
+                        "F13"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -4964,7 +4956,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Twinkle Tyagi, Himani Bansal, SANTOSH, Baibhav",
+                    "teacher": "Arti Jain, Himani Bansal, SANTOSH, Baibhav",
                     "batches": [
                         "F13",
                         "F14",
@@ -5057,7 +5049,7 @@
         }
     },
     "btech-128_sem1_phase1_f14": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -5141,7 +5133,7 @@
                     "type": "L"
                 },
                 {
-                    "start": "02:00 PM",
+                    "start": "03:00 PM",
                     "end": "03:50 PM",
                     "subject": "Physics-1",
                     "subjectcode": "15B11PH111",
@@ -5224,11 +5216,9 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Piyush Sharma, Rahul Kumar, Harish Bishwakarma, JUGENDRA SINGH",
+                    "teacher": "Rahul Kumar, JUGENDRA SINGH",
                     "batches": [
-                        "F13",
-                        "F14",
-                        "H3"
+                        "F14"
                     ],
                     "venue": "EDD/CADD03",
                     "type": "P"
@@ -5251,7 +5241,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Twinkle Tyagi, Himani Bansal, SANTOSH, Baibhav",
+                    "teacher": "Arti Jain, Himani Bansal, SANTOSH, Baibhav",
                     "batches": [
                         "F13",
                         "F14",
@@ -5267,7 +5257,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "Vimal Kumar Mishra, Ajit Kumar",
+                    "teacher": "Vimal Kumar Mishra, RAS",
                     "batches": [
                         "F14"
                     ],
@@ -5356,7 +5346,7 @@
         }
     },
     "btech-128_sem1_phase1_f17": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -5377,7 +5367,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "MOHIT",
+                    "teacher": "Twinkle Tyagi",
                     "batches": [
                         "F18",
                         "F17"
@@ -5454,10 +5444,8 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Niraj Kumar, Sumit Mahajan, Prabhakar Jha, RAVI",
+                    "teacher": "Prabhakar Jha",
                     "batches": [
-                        "F7",
-                        "F8",
                         "F17"
                     ],
                     "venue": "EDD/CADD03",
@@ -5510,7 +5498,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "ANKIT, Shariq Murtuza, Twinkle Tyagi, SAMARTH JAIN",
+                    "teacher": "ANKIT, VAIBHAV, Twinkle Tyagi, SAMARTH JAIN",
                     "batches": [
                         "E4",
                         "F18",
@@ -5548,7 +5536,7 @@
                     "end": "02:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "MOHIT",
+                    "teacher": "Twinkle Tyagi",
                     "batches": [
                         "F18",
                         "F17"
@@ -5614,7 +5602,7 @@
                     "end": "01:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "MOHIT",
+                    "teacher": "Twinkle Tyagi",
                     "batches": [
                         "F18",
                         "F17"
@@ -5655,7 +5643,7 @@
         }
     },
     "btech-128_sem1_phase1_f18": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -5676,7 +5664,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "MOHIT",
+                    "teacher": "Twinkle Tyagi",
                     "batches": [
                         "F18",
                         "F17"
@@ -5729,10 +5717,8 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Rahul Kumar, Harish Bishwakarma, Piyush Sharma",
+                    "teacher": "Piyush Sharma",
                     "batches": [
-                        "F5",
-                        "F6",
                         "F18"
                     ],
                     "venue": "EDD/CADD03",
@@ -5797,7 +5783,7 @@
                     "end": "10:50 AM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "ANKIT, Shariq Murtuza, Twinkle Tyagi, SAMARTH JAIN",
+                    "teacher": "ANKIT, VAIBHAV, Twinkle Tyagi, SAMARTH JAIN",
                     "batches": [
                         "E4",
                         "F18",
@@ -5823,7 +5809,7 @@
                     "end": "02:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "MOHIT",
+                    "teacher": "Twinkle Tyagi",
                     "batches": [
                         "F18",
                         "F17"
@@ -5889,7 +5875,7 @@
                     "end": "01:50 PM",
                     "subject": "Software Development Fundamentals-I",
                     "subjectcode": "15B11CI1111",
-                    "teacher": "MOHIT",
+                    "teacher": "Twinkle Tyagi",
                     "batches": [
                         "F18",
                         "F17"
@@ -5954,7 +5940,7 @@
         }
     },
     "btech-128_sem1_phase1_f21": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -5962,10 +5948,8 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Prabhakar Jha, Harish Bishwakarma, Niraj Kumar, JUGENDRA SINGH",
+                    "teacher": "AEB",
                     "batches": [
-                        "F1",
-                        "F2",
                         "F21"
                     ],
                     "venue": "EDD/CADD03",
@@ -5976,7 +5960,7 @@
                     "end": "12:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATH 4",
+                    "teacher": "ATH",
                     "batches": [
                         "F21",
                         "F22"
@@ -6028,28 +6012,28 @@
                     "end": "02:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 4",
+                    "teacher": "ATH",
                     "batches": [
                         "F21",
                         "F22"
                     ],
                     "venue": "117",
                     "type": "L"
-                },
+                }
+            ],
+            "Wednesday": [
                 {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
                     "subject": "Physics-1",
                     "subjectcode": "15B11PH111",
                     "teacher": "Vikas Malik",
                     "batches": [
                         "F21"
                     ],
-                    "venue": "117",
+                    "venue": "116",
                     "type": "T"
-                }
-            ],
-            "Wednesday": [
+                },
                 {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
@@ -6213,7 +6197,7 @@
                     "end": "10:50 AM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 4",
+                    "teacher": "ATH",
                     "batches": [
                         "F21",
                         "F22"
@@ -6252,7 +6236,7 @@
         }
     },
     "btech-128_sem1_phase1_f22": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -6272,7 +6256,7 @@
                     "end": "12:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATH 4",
+                    "teacher": "ATH",
                     "batches": [
                         "F21",
                         "F22"
@@ -6285,10 +6269,8 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Sumit Mahajan, Piyush Sharma, Rahul Kumar",
+                    "teacher": "RAK (HAB)",
                     "batches": [
-                        "F3",
-                        "F4",
                         "F22"
                     ],
                     "venue": "EDD/CADD03",
@@ -6326,7 +6308,7 @@
                     "end": "02:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 4",
+                    "teacher": "ATH",
                     "batches": [
                         "F21",
                         "F22"
@@ -6511,7 +6493,7 @@
                     "end": "10:50 AM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 4",
+                    "teacher": "ATH",
                     "batches": [
                         "F21",
                         "F22"
@@ -6550,7 +6532,7 @@
         }
     },
     "btech-128_sem1_phase1_f24": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -6558,7 +6540,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "New Faculty EC 1, Ruchi Singh",
+                    "teacher": "ICY, Ruchi Singh",
                     "batches": [
                         "F24"
                     ],
@@ -6685,6 +6667,18 @@
                     "type": "L"
                 },
                 {
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
+                    "subject": "Mathematics-1",
+                    "subjectcode": "15B11MA111",
+                    "teacher": "Pankaj Kumar Srivastava",
+                    "batches": [
+                        "F24"
+                    ],
+                    "venue": "111",
+                    "type": "T"
+                },
+                {
                     "start": "03:00 PM",
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals-I",
@@ -6696,18 +6690,6 @@
                     ],
                     "venue": "111",
                     "type": "L"
-                },
-                {
-                    "start": "04:00 PM",
-                    "end": "04:50 PM",
-                    "subject": "Mathematics-1",
-                    "subjectcode": "15B11MA111",
-                    "teacher": "Pankaj Kumar Srivastava",
-                    "batches": [
-                        "F24"
-                    ],
-                    "venue": "121",
-                    "type": "T"
                 },
                 {
                     "start": "04:00 PM",
@@ -6845,7 +6827,7 @@
         }
     },
     "btech-128_sem1_phase1_f25": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -6906,7 +6888,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "24B15EC111",
-                    "teacher": "New Faculty EC 1, Nilufar Yasmin",
+                    "teacher": "ICY, Nilufar Yasmin",
                     "batches": [
                         "F25"
                     ],
@@ -7140,7 +7122,7 @@
         }
     },
     "btech-128_sem1_phase1_h1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -7157,6 +7139,18 @@
                     "type": "L"
                 },
                 {
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
+                    "subject": "Mathematics-1",
+                    "subjectcode": "15B11MA111",
+                    "teacher": "Pankaj Kumar Srivastava",
+                    "batches": [
+                        "H1"
+                    ],
+                    "venue": "126",
+                    "type": "T"
+                },
+                {
                     "start": "11:00 AM",
                     "end": "12:50 PM",
                     "subject": "English",
@@ -7167,6 +7161,19 @@
                     ],
                     "venue": "246",
                     "type": "P"
+                },
+                {
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
+                    "subject": "Basic Electronics",
+                    "subjectcode": "24B11EC111",
+                    "teacher": "Bajrang Bansal",
+                    "batches": [
+                        "H1",
+                        "H2"
+                    ],
+                    "venue": "118",
+                    "type": "L"
                 },
                 {
                     "start": "03:00 PM",
@@ -7219,19 +7226,6 @@
                     ],
                     "venue": "111",
                     "type": "L"
-                },
-                {
-                    "start": "04:00 PM",
-                    "end": "04:50 PM",
-                    "subject": "Basic Electronics",
-                    "subjectcode": "24B11EC111",
-                    "teacher": "Bajrang Bansal",
-                    "batches": [
-                        "H1",
-                        "H2"
-                    ],
-                    "venue": "123",
-                    "type": "L"
                 }
             ],
             "Wednesday": [
@@ -7246,18 +7240,6 @@
                     ],
                     "venue": "41",
                     "type": "P"
-                },
-                {
-                    "start": "02:00 PM",
-                    "end": "02:50 PM",
-                    "subject": "Mathematics-1",
-                    "subjectcode": "15B11MA111",
-                    "teacher": "Pankaj Kumar Srivastava",
-                    "batches": [
-                        "H1"
-                    ],
-                    "venue": "111",
-                    "type": "T"
                 },
                 {
                     "start": "03:00 PM",
@@ -7316,7 +7298,7 @@
                     "end": "03:50 PM",
                     "subject": "Software Development Fundamentals",
                     "subjectcode": "24B15CS111",
-                    "teacher": "Twinkle Tyagi, Himani Bansal, SANTOSH, Baibhav",
+                    "teacher": "Arti Jain, Himani Bansal, SANTOSH, Baibhav",
                     "batches": [
                         "F13",
                         "F14",
@@ -7384,10 +7366,8 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Sumit Mahajan, Rahul Kumar, Piyush Sharma",
+                    "teacher": "AEB",
                     "batches": [
-                        "F9",
-                        "F10",
                         "H1"
                     ],
                     "venue": "EDD/CADD03",
@@ -7439,7 +7419,7 @@
         }
     },
     "btech-128_sem1_phase1_h2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -7478,6 +7458,19 @@
                     ],
                     "venue": "BE LAB-II",
                     "type": "P"
+                },
+                {
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
+                    "subject": "Basic Electronics",
+                    "subjectcode": "24B11EC111",
+                    "teacher": "Bajrang Bansal",
+                    "batches": [
+                        "H1",
+                        "H2"
+                    ],
+                    "venue": "118",
+                    "type": "L"
                 },
                 {
                     "start": "03:00 PM",
@@ -7542,19 +7535,6 @@
                     ],
                     "venue": "127",
                     "type": "T"
-                },
-                {
-                    "start": "04:00 PM",
-                    "end": "04:50 PM",
-                    "subject": "Basic Electronics",
-                    "subjectcode": "24B11EC111",
-                    "teacher": "Bajrang Bansal",
-                    "batches": [
-                        "H1",
-                        "H2"
-                    ],
-                    "venue": "123",
-                    "type": "L"
                 }
             ],
             "Wednesday": [
@@ -7589,10 +7569,8 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Harish Bishwakarma, Rahul Kumar, Sumit Mahajan, JUGENDRA SINGH",
+                    "teacher": "SUM (PSH)",
                     "batches": [
-                        "F11",
-                        "F12",
                         "H2"
                     ],
                     "venue": "EDD/CADD03",
@@ -7738,7 +7716,7 @@
         }
     },
     "btech-128_sem1_phase1_h3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -7824,12 +7802,12 @@
                     "end": "02:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 3",
+                    "teacher": "Pankaj Kumar Rana",
                     "batches": [
                         "H3",
                         "H4"
                     ],
-                    "venue": "SR05",
+                    "venue": "SR05 NEA",
                     "type": "L"
                 },
                 {
@@ -7878,12 +7856,12 @@
                     "end": "02:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "",
+                    "teacher": "Neha Ahlawat, Pankaj Kumar Rana",
                     "batches": [
                         "H3",
                         "H4"
                     ],
-                    "venue": "117 NFMATHS3",
+                    "venue": "117",
                     "type": "L"
                 },
                 {
@@ -7906,10 +7884,8 @@
                     "end": "11:50 AM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Piyush Sharma, Rahul Kumar, Harish Bishwakarma, JUGENDRA SINGH",
+                    "teacher": "Harish Bishwakarma",
                     "batches": [
-                        "F13",
-                        "F14",
                         "H3"
                     ],
                     "venue": "EDD/CADD03",
@@ -7970,7 +7946,7 @@
                     "end": "11:50 AM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 3",
+                    "teacher": "Neha Ahlawat, Pankaj Kumar Rana",
                     "batches": [
                         "H3",
                         "H4"
@@ -8037,7 +8013,7 @@
         }
     },
     "btech-128_sem1_phase1_h4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -8123,12 +8099,12 @@
                     "end": "02:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 3",
+                    "teacher": "Pankaj Kumar Rana",
                     "batches": [
                         "H3",
                         "H4"
                     ],
-                    "venue": "SR05",
+                    "venue": "SR05 NEA",
                     "type": "L"
                 },
                 {
@@ -8177,12 +8153,12 @@
                     "end": "02:50 PM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "",
+                    "teacher": "Neha Ahlawat, Pankaj Kumar Rana",
                     "batches": [
                         "H3",
                         "H4"
                     ],
-                    "venue": "117 NFMATHS3",
+                    "venue": "117",
                     "type": "L"
                 },
                 {
@@ -8229,10 +8205,8 @@
                     "end": "04:50 PM",
                     "subject": "Engineering Drawing and Design",
                     "subjectcode": "18B15GE111",
-                    "teacher": "Niraj Kumar, Prabhakar Jha, Sumit Mahajan, RAVI",
+                    "teacher": "AEB",
                     "batches": [
-                        "E1",
-                        "E2",
                         "H4"
                     ],
                     "venue": "EDD/CADD03",
@@ -8257,7 +8231,7 @@
                     "end": "11:50 AM",
                     "subject": "Mathematics-1",
                     "subjectcode": "15B11MA111",
-                    "teacher": "New Faculty MATHS 3",
+                    "teacher": "Neha Ahlawat, Pankaj Kumar Rana",
                     "batches": [
                         "H3",
                         "H4"
@@ -8336,7 +8310,7 @@
         }
     },
     "btech-62_sem1_phase1_a1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -8630,7 +8604,7 @@
         }
     },
     "btech-62_sem1_phase1_a2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -8827,18 +8801,6 @@
                     ],
                     "venue": "G2",
                     "type": "L"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
-                    "subject": "Software Development Fundamentals-1",
-                    "subjectcode": "CI111",
-                    "teacher": "Pratik Shrivastava",
-                    "batches": [
-                        "A2"
-                    ],
-                    "venue": "TS305",
-                    "type": "T"
                 }
             ],
             "Friday": [
@@ -8893,6 +8855,18 @@
                     "type": "L"
                 },
                 {
+                    "start": "02:00 PM",
+                    "end": "02:50 PM",
+                    "subject": "Software Development Fundamentals-1",
+                    "subjectcode": "CI111",
+                    "teacher": "Pratik Shrivastava",
+                    "batches": [
+                        "A2"
+                    ],
+                    "venue": "TS305",
+                    "type": "T"
+                },
+                {
                     "start": "03:00 PM",
                     "end": "03:50 PM",
                     "subject": "Basic Electronics Lab",
@@ -8924,7 +8898,7 @@
         }
     },
     "btech-62_sem1_phase1_a3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -9219,7 +9193,7 @@
         }
     },
     "btech-62_sem1_phase1_a4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -9502,7 +9476,7 @@
                     "end": "12:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "RRJ, Teaching Assistant 14",
+                    "teacher": "Sumeshwar Singh, Teaching Assistant 14",
                     "batches": [
                         "A4"
                     ],
@@ -9514,7 +9488,7 @@
         }
     },
     "btech-62_sem1_phase1_a5": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -9809,7 +9783,7 @@
         }
     },
     "btech-62_sem1_phase1_a6": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -10083,7 +10057,7 @@
                     "batches": [
                         "A6"
                     ],
-                    "venue": "TS7",
+                    "venue": "TR305",
                     "type": "T"
                 },
                 {
@@ -10104,7 +10078,7 @@
         }
     },
     "btech-62_sem1_phase1_a7": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -10243,7 +10217,7 @@
                     "end": "11:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Sumeshwar Singh",
                     "batches": [
                         "A7"
                     ],
@@ -10399,7 +10373,7 @@
         }
     },
     "btech-62_sem1_phase1_a8": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -10694,7 +10668,7 @@
         }
     },
     "btech-62_sem1_phase1_a10": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -10720,7 +10694,7 @@
                         "A10",
                         "B14"
                     ],
-                    "venue": "FF9",
+                    "venue": "CS8",
                     "type": "L"
                 },
                 {
@@ -10989,7 +10963,7 @@
         }
     },
     "btech-62_sem1_phase1_a15": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -11284,7 +11258,7 @@
         }
     },
     "btech-62_sem1_phase1_a16": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -11579,7 +11553,7 @@
         }
     },
     "btech-62_sem1_phase1_a17": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -11874,7 +11848,7 @@
         }
     },
     "btech-62_sem1_phase1_a18": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -11882,7 +11856,7 @@
                     "end": "11:50 AM",
                     "subject": "English",
                     "subjectcode": "HS112",
-                    "teacher": "Dr. Ekta Singh",
+                    "teacher": "AMI",
                     "batches": [
                         "A18"
                     ],
@@ -12169,7 +12143,7 @@
         }
     },
     "btech-62_sem1_phase1_b1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -12464,7 +12438,7 @@
         }
     },
     "btech-62_sem1_phase1_b2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -12679,7 +12653,7 @@
                     "end": "04:50 PM",
                     "subject": "English",
                     "subjectcode": "HS112",
-                    "teacher": "Dr Yogita Naruka",
+                    "teacher": "AMI",
                     "batches": [
                         "B2"
                     ],
@@ -12759,7 +12733,7 @@
         }
     },
     "btech-62_sem1_phase1_b3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -13053,7 +13027,7 @@
         }
     },
     "btech-62_sem1_phase1_b4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -13347,7 +13321,7 @@
         }
     },
     "btech-62_sem1_phase1_b5": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -13355,7 +13329,7 @@
                     "end": "02:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "JMN",
                     "batches": [
                         "B5",
                         "B6"
@@ -13457,6 +13431,19 @@
             ],
             "Wednesday": [
                 {
+                    "start": "09:00 AM",
+                    "end": "09:50 AM",
+                    "subject": "Basic Electronics Lab",
+                    "subjectcode": "EC111",
+                    "teacher": "JMN",
+                    "batches": [
+                        "B5",
+                        "B6"
+                    ],
+                    "venue": "CS5",
+                    "type": "L"
+                },
+                {
                     "start": "10:00 AM",
                     "end": "10:50 AM",
                     "subject": "Mathematics-1",
@@ -13521,19 +13508,6 @@
             ],
             "Thursday": [
                 {
-                    "start": "10:00 AM",
-                    "end": "10:50 AM",
-                    "subject": "Basic Electronics Lab",
-                    "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
-                    "batches": [
-                        "B5",
-                        "B6"
-                    ],
-                    "venue": "G9",
-                    "type": "L"
-                },
-                {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
                     "subject": "Software Development Fundamentals-1",
@@ -13561,16 +13535,16 @@
             ],
             "Friday": [
                 {
-                    "start": "10:00 AM",
-                    "end": "10:50 AM",
+                    "start": "09:00 AM",
+                    "end": "09:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "JMN",
                     "batches": [
                         "B5",
                         "B6"
                     ],
-                    "venue": "G9",
+                    "venue": "CS6",
                     "type": "L"
                 },
                 {
@@ -13642,7 +13616,7 @@
         }
     },
     "btech-62_sem1_phase1_b6": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -13662,7 +13636,7 @@
                     "end": "02:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "JMN",
                     "batches": [
                         "B5",
                         "B6"
@@ -13740,6 +13714,19 @@
             ],
             "Wednesday": [
                 {
+                    "start": "09:00 AM",
+                    "end": "09:50 AM",
+                    "subject": "Basic Electronics Lab",
+                    "subjectcode": "EC111",
+                    "teacher": "JMN",
+                    "batches": [
+                        "B5",
+                        "B6"
+                    ],
+                    "venue": "CS5",
+                    "type": "L"
+                },
+                {
                     "start": "10:00 AM",
                     "end": "10:50 AM",
                     "subject": "Physics-1",
@@ -13804,19 +13791,6 @@
             ],
             "Thursday": [
                 {
-                    "start": "10:00 AM",
-                    "end": "10:50 AM",
-                    "subject": "Basic Electronics Lab",
-                    "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
-                    "batches": [
-                        "B5",
-                        "B6"
-                    ],
-                    "venue": "G9",
-                    "type": "L"
-                },
-                {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
                     "subject": "Software Development Fundamentals-1",
@@ -13844,16 +13818,16 @@
             ],
             "Friday": [
                 {
-                    "start": "10:00 AM",
-                    "end": "10:50 AM",
+                    "start": "09:00 AM",
+                    "end": "09:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "JMN",
                     "batches": [
                         "B5",
                         "B6"
                     ],
-                    "venue": "G9",
+                    "venue": "CS6",
                     "type": "L"
                 },
                 {
@@ -13937,7 +13911,7 @@
         }
     },
     "btech-62_sem1_phase1_b7": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -13945,7 +13919,7 @@
                     "end": "11:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "RRJ, New Faculty 1",
+                    "teacher": "RRJ, JMN",
                     "batches": [
                         "B7"
                     ],
@@ -13957,7 +13931,7 @@
                     "end": "01:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Jyoti Deshwal Yadav",
                     "batches": [
                         "B7",
                         "B8"
@@ -14067,7 +14041,7 @@
                     "batches": [
                         "B7"
                     ],
-                    "venue": "TS6",
+                    "venue": "F4",
                     "type": "T"
                 },
                 {
@@ -14125,7 +14099,7 @@
                     "end": "04:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Jyoti Deshwal Yadav",
                     "batches": [
                         "B7",
                         "B8"
@@ -14153,7 +14127,7 @@
                     "end": "03:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Jyoti Deshwal Yadav",
                     "batches": [
                         "B7",
                         "B8"
@@ -14232,7 +14206,7 @@
         }
     },
     "btech-62_sem1_phase1_b8": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -14252,7 +14226,7 @@
                     "end": "01:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Jyoti Deshwal Yadav",
                     "batches": [
                         "B7",
                         "B8"
@@ -14408,7 +14382,7 @@
                     "end": "04:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Jyoti Deshwal Yadav",
                     "batches": [
                         "B7",
                         "B8"
@@ -14448,7 +14422,7 @@
                     "end": "03:50 PM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Jyoti Deshwal Yadav",
                     "batches": [
                         "B7",
                         "B8"
@@ -14527,7 +14501,7 @@
         }
     },
     "btech-62_sem1_phase1_b9": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -14691,7 +14665,7 @@
                     "end": "04:50 PM",
                     "subject": "English",
                     "subjectcode": "HS112",
-                    "teacher": "Dr Mohua Dutta",
+                    "teacher": "AMI",
                     "batches": [
                         "B9"
                     ],
@@ -14822,7 +14796,7 @@
         }
     },
     "btech-62_sem1_phase1_b10": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -15117,7 +15091,7 @@
         }
     },
     "btech-62_sem1_phase1_b11": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -15177,7 +15151,7 @@
                     "end": "10:50 AM",
                     "subject": "Basic Electronics Lab",
                     "subjectcode": "EC111",
-                    "teacher": "Aanchal Agarwal",
+                    "teacher": "Sumeshwar Singh",
                     "batches": [
                         "B11"
                     ],
@@ -15412,7 +15386,7 @@
         }
     },
     "btech-62_sem1_phase1_b12": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -15707,7 +15681,7 @@
         }
     },
     "btech-62_sem1_phase1_b14": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -15733,7 +15707,7 @@
                         "A10",
                         "B14"
                     ],
-                    "venue": "FF9",
+                    "venue": "CS8",
                     "type": "L"
                 },
                 {
@@ -16002,7 +15976,7 @@
         }
     },
     "btech-62_sem1_phase1_c1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -16180,6 +16154,18 @@
                     "type": "P"
                 },
                 {
+                    "start": "11:00 AM",
+                    "end": "11:50 AM",
+                    "subject": "Basic Mathematics-1",
+                    "subjectcode": "MA112",
+                    "teacher": "New Faculty 5",
+                    "batches": [
+                        "C1"
+                    ],
+                    "venue": "TR305",
+                    "type": "T"
+                },
+                {
                     "start": "01:00 PM",
                     "end": "01:50 PM",
                     "subject": "Physics for Biotechnology",
@@ -16206,18 +16192,6 @@
                     ],
                     "venue": "G7",
                     "type": "L"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
-                    "subject": "Basic Mathematics-1",
-                    "subjectcode": "MA112",
-                    "teacher": "New Faculty 5",
-                    "batches": [
-                        "C1"
-                    ],
-                    "venue": "TS13",
-                    "type": "T"
                 },
                 {
                     "start": "04:00 PM",
@@ -16310,7 +16284,7 @@
         }
     },
     "btech-62_sem1_phase1_c2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -16618,7 +16592,7 @@
         }
     },
     "btech-62_sem1_phase1_c3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -16914,7 +16888,7 @@
                     "end": "12:50 PM",
                     "subject": "English",
                     "subjectcode": "HS112",
-                    "teacher": "KNP",
+                    "teacher": "AMI",
                     "batches": [
                         "C3"
                     ],
@@ -16926,7 +16900,7 @@
         }
     },
     "btech-62_sem1_phase1_d1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -17220,7 +17194,7 @@
         }
     },
     "btech-62_sem1_phase1_d2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -17515,7 +17489,7 @@
         }
     },
     "btech-62_sem1_phase1_g1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -17810,7 +17784,7 @@
         }
     },
     "btech-62_sem1_phase1_g2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -18104,7 +18078,7 @@
         }
     },
     "btech-62_sem1_phase1_g3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -18399,7 +18373,7 @@
         }
     },
     "btech-62_sem1_phase1_g4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -18694,7 +18668,7 @@
         }
     },
     "btech-62_sem3_phase1_a1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -18757,7 +18731,7 @@
                     "batches": [
                         "A1"
                     ],
-                    "venue": "TS8",
+                    "venue": "CR326",
                     "type": "T"
                 },
                 {
@@ -19028,7 +19002,7 @@
         }
     },
     "btech-62_sem3_phase1_a2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -19362,7 +19336,7 @@
         }
     },
     "btech-62_sem3_phase1_a3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -19649,7 +19623,7 @@
                     "batches": [
                         "A3"
                     ],
-                    "venue": "TS12",
+                    "venue": "TS11",
                     "type": "T"
                 },
                 {
@@ -19697,7 +19671,7 @@
         }
     },
     "btech-62_sem3_phase1_a4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -20032,7 +20006,7 @@
         }
     },
     "btech-62_sem3_phase1_a5": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -20367,7 +20341,7 @@
         }
     },
     "btech-62_sem3_phase1_a6": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -20701,7 +20675,7 @@
         }
     },
     "btech-62_sem3_phase1_a7": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -20796,7 +20770,7 @@
                     "batches": [
                         "A7"
                     ],
-                    "venue": "TS17",
+                    "venue": "TR307",
                     "type": "T"
                 },
                 {
@@ -21050,7 +21024,7 @@
         }
     },
     "btech-62_sem3_phase1_a8": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -21255,7 +21229,7 @@
                     "batches": [
                         "A8"
                     ],
-                    "venue": "TS12",
+                    "venue": "TR307",
                     "type": "T"
                 },
                 {
@@ -21399,7 +21373,7 @@
         }
     },
     "btech-62_sem3_phase1_a10": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -21748,7 +21722,7 @@
         }
     },
     "btech-62_sem3_phase1_a15": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -21921,19 +21895,6 @@
                     "type": "T"
                 },
                 {
-                    "start": "12:00 PM",
-                    "end": "01:00 PM",
-                    "subject": "Mathematical Foundation of Probability and Statistics",
-                    "subjectcode": "24B11MA211",
-                    "teacher": "Dr. Gaurav Agrawal",
-                    "batches": [
-                        "A15",
-                        "A16"
-                    ],
-                    "venue": "G8",
-                    "type": "L"
-                },
-                {
                     "start": "02:00 PM",
                     "end": "03:00 PM",
                     "subject": "Electronic Devices",
@@ -22011,6 +21972,19 @@
                     ],
                     "venue": "CML",
                     "type": "P"
+                },
+                {
+                    "start": "04:00 PM",
+                    "end": "05:00 PM",
+                    "subject": "Mathematical Foundation of Probability and Statistics",
+                    "subjectcode": "24B11MA211",
+                    "teacher": "Dr. Gaurav Agrawal",
+                    "batches": [
+                        "A15",
+                        "A16"
+                    ],
+                    "venue": "G8",
+                    "type": "L"
                 }
             ],
             "Friday": [
@@ -22084,7 +22058,7 @@
         }
     },
     "btech-62_sem3_phase1_a16": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -22245,19 +22219,6 @@
                     "type": "L"
                 },
                 {
-                    "start": "12:00 PM",
-                    "end": "01:00 PM",
-                    "subject": "Mathematical Foundation of Probability and Statistics",
-                    "subjectcode": "24B11MA211",
-                    "teacher": "Dr. Gaurav Agrawal",
-                    "batches": [
-                        "A15",
-                        "A16"
-                    ],
-                    "venue": "G8",
-                    "type": "L"
-                },
-                {
                     "start": "02:00 PM",
                     "end": "03:00 PM",
                     "subject": "Electronic Devices",
@@ -22347,6 +22308,19 @@
                     ],
                     "venue": "EDC",
                     "type": "P"
+                },
+                {
+                    "start": "04:00 PM",
+                    "end": "05:00 PM",
+                    "subject": "Mathematical Foundation of Probability and Statistics",
+                    "subjectcode": "24B11MA211",
+                    "teacher": "Dr. Gaurav Agrawal",
+                    "batches": [
+                        "A15",
+                        "A16"
+                    ],
+                    "venue": "G8",
+                    "type": "L"
                 }
             ],
             "Friday": [
@@ -22359,7 +22333,7 @@
                     "batches": [
                         "A16"
                     ],
-                    "venue": "TS12",
+                    "venue": "TR326",
                     "type": "T"
                 },
                 {
@@ -22420,7 +22394,7 @@
         }
     },
     "btech-62_sem3_phase1_a17": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -22602,7 +22576,7 @@
                     "batches": [
                         "A17"
                     ],
-                    "venue": "TS12",
+                    "venue": "TR302",
                     "type": "T"
                 },
                 {
@@ -22755,7 +22729,7 @@
         }
     },
     "btech-62_sem3_phase1_a18": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -23090,7 +23064,7 @@
         }
     },
     "btech-62_sem3_phase1_b1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -23355,7 +23329,7 @@
                     "batches": [
                         "B1"
                     ],
-                    "venue": "TS8",
+                    "venue": "TR305",
                     "type": "T"
                 },
                 {
@@ -23390,7 +23364,7 @@
         }
     },
     "btech-62_sem3_phase1_b2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -23690,7 +23664,7 @@
         }
     },
     "btech-62_sem3_phase1_b3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -23976,7 +23950,7 @@
                     "end": "05:00 PM",
                     "subject": "Object Oriented Programming using Java",
                     "subjectcode": "B15CS215",
-                    "teacher": "Dr. Raghu Vamsi, Dr. Tribhuwan K. Tewari, SVS, Jyoti Chauhan",
+                    "teacher": "Dr. Raghu Vamsi, Dr. Tribhuwan K. Tewari, Jyoti Chauhan",
                     "batches": [
                         "B3",
                         "B4"
@@ -23990,7 +23964,7 @@
         }
     },
     "btech-62_sem3_phase1_b4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -24101,6 +24075,18 @@
             ],
             "Wednesday": [
                 {
+                    "start": "09:00 AM",
+                    "end": "10:00 AM",
+                    "subject": "Mathematical Foundations for Artificial Intelligence and Data Science",
+                    "subjectcode": "MA213",
+                    "teacher": "Dr. Himanshu Agarwal",
+                    "batches": [
+                        "B4"
+                    ],
+                    "venue": "TR305",
+                    "type": "T"
+                },
+                {
                     "start": "10:00 AM",
                     "end": "11:00 AM",
                     "subject": "Data Structures",
@@ -24206,18 +24192,6 @@
                     "type": "L"
                 },
                 {
-                    "start": "03:00 PM",
-                    "end": "04:00 PM",
-                    "subject": "Mathematical Foundations for Artificial Intelligence and Data Science",
-                    "subjectcode": "MA213",
-                    "teacher": "Dr. Himanshu Agarwal",
-                    "batches": [
-                        "B4"
-                    ],
-                    "venue": "TS6",
-                    "type": "T"
-                },
-                {
                     "start": "04:00 PM",
                     "end": "05:00 PM",
                     "subject": "Theoretical Foundations of Computer Science",
@@ -24276,7 +24250,7 @@
                     "end": "05:00 PM",
                     "subject": "Object Oriented Programming using Java",
                     "subjectcode": "B15CS215",
-                    "teacher": "Dr. Raghu Vamsi, Dr. Tribhuwan K. Tewari, SVS, Jyoti Chauhan",
+                    "teacher": "Dr. Raghu Vamsi, Dr. Tribhuwan K. Tewari, Jyoti Chauhan",
                     "batches": [
                         "B3",
                         "B4"
@@ -24290,7 +24264,7 @@
         }
     },
     "btech-62_sem3_phase1_b5": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -24591,7 +24565,7 @@
         }
     },
     "btech-62_sem3_phase1_b6": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -24683,7 +24657,7 @@
                     "batches": [
                         "B6"
                     ],
-                    "venue": "TS20",
+                    "venue": "TR302",
                     "type": "T"
                 },
                 {
@@ -24931,7 +24905,7 @@
         }
     },
     "btech-62_sem3_phase1_b7": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -25175,7 +25149,7 @@
                     "end": "05:00 PM",
                     "subject": "Object Oriented Programming using Java",
                     "subjectcode": "B15CS215",
-                    "teacher": "SVS, Neetu Singh, Dr. Tanvee Gautam",
+                    "teacher": "Pratik Shrivastava, Neetu Singh, Dr. Tanvee Gautam",
                     "batches": [
                         "B7",
                         "B8"
@@ -25230,7 +25204,7 @@
         }
     },
     "btech-62_sem3_phase1_b8": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -25474,7 +25448,7 @@
                     "end": "05:00 PM",
                     "subject": "Object Oriented Programming using Java",
                     "subjectcode": "B15CS215",
-                    "teacher": "SVS, Neetu Singh, Dr. Tanvee Gautam",
+                    "teacher": "Pratik Shrivastava, Neetu Singh, Dr. Tanvee Gautam",
                     "batches": [
                         "B7",
                         "B8"
@@ -25529,7 +25503,7 @@
         }
     },
     "btech-62_sem3_phase1_b9": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -25771,8 +25745,8 @@
             ],
             "Friday": [
                 {
-                    "start": "11:00 AM",
-                    "end": "12:00 PM",
+                    "start": "10:00 AM",
+                    "end": "11:00 AM",
                     "subject": "Mathematical Foundations for Artificial Intelligence and Data Science",
                     "subjectcode": "MA213",
                     "teacher": "Dr. Mohd. Prawesh Alam",
@@ -25829,7 +25803,7 @@
         }
     },
     "btech-62_sem3_phase1_b10": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -25841,7 +25815,7 @@
                     "batches": [
                         "B10"
                     ],
-                    "venue": "TS12",
+                    "venue": "TR305",
                     "type": "T"
                 },
                 {
@@ -26072,8 +26046,8 @@
             ],
             "Friday": [
                 {
-                    "start": "11:00 AM",
-                    "end": "12:00 PM",
+                    "start": "10:00 AM",
+                    "end": "11:00 AM",
                     "subject": "Mathematical Foundations for Artificial Intelligence and Data Science",
                     "subjectcode": "MA213",
                     "teacher": "Dr. Mohd. Prawesh Alam",
@@ -26130,7 +26104,7 @@
         }
     },
     "btech-62_sem3_phase1_b11": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -26431,7 +26405,7 @@
         }
     },
     "btech-62_sem3_phase1_b12": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -26731,8 +26705,34 @@
             "Sunday": []
         }
     },
+    "btech-62_sem3_phase1_b13": {
+        "cacheVersion": "v2025.08.25.16.20.42",
+        "classes": {
+            "Monday": [],
+            "Tuesday": [],
+            "Wednesday": [
+                {
+                    "start": "10:00 AM",
+                    "end": "11:00 AM",
+                    "subject": "Economics",
+                    "subjectcode": "HS211",
+                    "teacher": "MAM",
+                    "batches": [
+                        "B13",
+                        "B16"
+                    ],
+                    "venue": "CR425",
+                    "type": "L"
+                }
+            ],
+            "Thursday": [],
+            "Friday": [],
+            "Saturday": [],
+            "Sunday": []
+        }
+    },
     "btech-62_sem3_phase1_b14": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -26749,6 +26749,19 @@
                     "type": "L"
                 },
                 {
+                    "start": "12:00 PM",
+                    "end": "01:00 PM",
+                    "subject": "Economics",
+                    "subjectcode": "HS211",
+                    "teacher": "MAM",
+                    "batches": [
+                        "B14",
+                        "B16"
+                    ],
+                    "venue": "FF6",
+                    "type": "L"
+                },
+                {
                     "start": "02:00 PM",
                     "end": "03:00 PM",
                     "subject": "Economics",
@@ -26759,19 +26772,6 @@
                     ],
                     "venue": "TS10",
                     "type": "T"
-                },
-                {
-                    "start": "04:00 PM",
-                    "end": "05:00 PM",
-                    "subject": "Economics",
-                    "subjectcode": "HS211",
-                    "teacher": "MAM",
-                    "batches": [
-                        "B14",
-                        "B16"
-                    ],
-                    "venue": "FF7",
-                    "type": "L"
                 }
             ],
             "Tuesday": [
@@ -26865,19 +26865,6 @@
                         "B16"
                     ],
                     "venue": "CS8",
-                    "type": "L"
-                },
-                {
-                    "start": "10:00 AM",
-                    "end": "11:00 AM",
-                    "subject": "Economics",
-                    "subjectcode": "HS211",
-                    "teacher": "MAM",
-                    "batches": [
-                        "B14",
-                        "B16"
-                    ],
-                    "venue": "FF6",
                     "type": "L"
                 },
                 {
@@ -27033,12 +27020,12 @@
         }
     },
     "btech-62_sem3_phase1_b16": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
-                    "start": "04:00 PM",
-                    "end": "05:00 PM",
+                    "start": "12:00 PM",
+                    "end": "01:00 PM",
                     "subject": "Economics",
                     "subjectcode": "HS211",
                     "teacher": "MAM",
@@ -27046,7 +27033,7 @@
                         "B14",
                         "B16"
                     ],
-                    "venue": "FF7",
+                    "venue": "FF6",
                     "type": "L"
                 }
             ],
@@ -27137,10 +27124,10 @@
                     "subjectcode": "HS211",
                     "teacher": "MAM",
                     "batches": [
-                        "B14",
+                        "B13",
                         "B16"
                     ],
-                    "venue": "FF6",
+                    "venue": "CR425",
                     "type": "L"
                 },
                 {
@@ -27239,6 +27226,18 @@
                     "type": "P"
                 },
                 {
+                    "start": "11:00 AM",
+                    "end": "12:00 PM",
+                    "subject": "Economics",
+                    "subjectcode": "HS211",
+                    "teacher": "Prof. Mukta Mani",
+                    "batches": [
+                        "B16"
+                    ],
+                    "venue": "TS12",
+                    "type": "T"
+                },
+                {
                     "start": "12:00 PM",
                     "end": "01:00 PM",
                     "subject": "Database Management Systems",
@@ -27250,18 +27249,6 @@
                     ],
                     "venue": "G1",
                     "type": "L"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "04:00 PM",
-                    "subject": "Economics",
-                    "subjectcode": "HS211",
-                    "teacher": "Prof. Mukta Mani",
-                    "batches": [
-                        "B16"
-                    ],
-                    "venue": "TS10",
-                    "type": "T"
                 }
             ],
             "Saturday": [
@@ -27295,7 +27282,7 @@
         }
     },
     "btech-62_sem3_phase1_c1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -27644,7 +27631,7 @@
         }
     },
     "btech-62_sem3_phase1_c2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -27993,7 +27980,7 @@
         }
     },
     "btech-62_sem3_phase1_c3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -28314,7 +28301,7 @@
                     "end": "04:00 PM",
                     "subject": "Economics",
                     "subjectcode": "HS211",
-                    "teacher": "MAM",
+                    "teacher": "Dr. Kanupriya Misra Bakhru",
                     "batches": [
                         "C3"
                     ],
@@ -28342,7 +28329,7 @@
         }
     },
     "btech-62_sem3_phase1_g1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -28423,6 +28410,18 @@
                 }
             ],
             "Tuesday": [
+                {
+                    "start": "10:00 AM",
+                    "end": "11:00 AM",
+                    "subject": "Economics",
+                    "subjectcode": "HS211",
+                    "teacher": "Dr. Priya",
+                    "batches": [
+                        "G1"
+                    ],
+                    "venue": "TR307",
+                    "type": "T"
+                },
                 {
                     "start": "11:00 AM",
                     "end": "12:00 PM",
@@ -28591,7 +28590,7 @@
                         "G1",
                         "G2"
                     ],
-                    "venue": "CS8",
+                    "venue": "CS5",
                     "type": "L"
                 },
                 {
@@ -28691,7 +28690,7 @@
         }
     },
     "btech-62_sem3_phase1_g2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -28953,7 +28952,7 @@
                         "G1",
                         "G2"
                     ],
-                    "venue": "CS8",
+                    "venue": "CS5",
                     "type": "L"
                 },
                 {
@@ -29041,7 +29040,7 @@
         }
     },
     "bca-62_sem3_phase1_bca": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [],
             "Tuesday": [],
@@ -29066,7 +29065,7 @@
         }
     },
     "bca-62_sem3_phase1_bca1": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -29079,7 +29078,7 @@
                         "BCA1",
                         "BCA2"
                     ],
-                    "venue": "325",
+                    "venue": "CR-501",
                     "type": "L"
                 },
                 {
@@ -29200,19 +29199,6 @@
                     ],
                     "venue": "CR301",
                     "type": "L"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
-                    "subject": "Algorithm and Problem Solving (APS)",
-                    "subjectcode": "23B61CA211",
-                    "teacher": "Mr. Kashav Ajmera",
-                    "batches": [
-                        "BCA1",
-                        "BCA2"
-                    ],
-                    "venue": "CR301",
-                    "type": "L"
                 }
             ],
             "Thursday": [
@@ -29275,7 +29261,7 @@
                     "end": "10:50 AM",
                     "subject": "Algorithm and Problem Solving (APS) Lab",
                     "subjectcode": "23B65CA214",
-                    "teacher": "Ms. Sherry Garg",
+                    "teacher": "Ms. Sherry Garg, AKT",
                     "batches": [
                         "BCA1"
                     ],
@@ -29352,7 +29338,7 @@
         }
     },
     "bca-62_sem3_phase1_bca2": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -29365,7 +29351,7 @@
                         "BCA1",
                         "BCA2"
                     ],
-                    "venue": "325",
+                    "venue": "CR-501",
                     "type": "L"
                 },
                 {
@@ -29510,19 +29496,6 @@
                     ],
                     "venue": "COMPUTER CENTRE ROOM NO 423 4TH FLOOR ABB-III",
                     "type": "P"
-                },
-                {
-                    "start": "03:00 PM",
-                    "end": "03:50 PM",
-                    "subject": "Algorithm and Problem Solving (APS)",
-                    "subjectcode": "23B61CA211",
-                    "teacher": "Mr. Kashav Ajmera",
-                    "batches": [
-                        "BCA1",
-                        "BCA2"
-                    ],
-                    "venue": "CR301",
-                    "type": "L"
                 }
             ],
             "Thursday": [
@@ -29638,7 +29611,7 @@
         }
     },
     "bca-62_sem3_phase1_bca3": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -29679,12 +29652,10 @@
                     ],
                     "venue": "CR301",
                     "type": "L"
-                }
-            ],
-            "Tuesday": [
+                },
                 {
-                    "start": "09:00 AM",
-                    "end": "10:50 AM",
+                    "start": "03:00 PM",
+                    "end": "04:50 PM",
                     "subject": "Algorithm and Problem Solving (APS) Lab",
                     "subjectcode": "23B65CA214",
                     "teacher": "Mr. Kashav Ajmera",
@@ -29693,6 +29664,21 @@
                     ],
                     "venue": "CC423",
                     "type": "P"
+                }
+            ],
+            "Tuesday": [
+                {
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
+                    "subject": "Algorithm and Problem Solving (APS)",
+                    "subjectcode": "23B61CA211",
+                    "teacher": "",
+                    "batches": [
+                        "BCA3",
+                        "BCA4"
+                    ],
+                    "venue": "CR325 KSA",
+                    "type": "L"
                 },
                 {
                     "start": "11:00 AM",
@@ -29722,19 +29708,6 @@
                 }
             ],
             "Wednesday": [
-                {
-                    "start": "09:00 AM",
-                    "end": "09:50 AM",
-                    "subject": "Algorithm and Problem Solving (APS)",
-                    "subjectcode": "23B61CA211",
-                    "teacher": "",
-                    "batches": [
-                        "BCA3",
-                        "BCA4"
-                    ],
-                    "venue": "CR325 KSA",
-                    "type": "L"
-                },
                 {
                     "start": "10:00 AM",
                     "end": "11:50 AM",
@@ -29854,19 +29827,6 @@
                     "type": "L"
                 },
                 {
-                    "start": "10:00 AM",
-                    "end": "10:50 AM",
-                    "subject": "Probability and Statistics",
-                    "subjectcode": "23B31MA211",
-                    "teacher": "New Faculty 3",
-                    "batches": [
-                        "BCA3",
-                        "BCA4"
-                    ],
-                    "venue": "CR301",
-                    "type": "L"
-                },
-                {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
                     "subject": "Algorithm and Problem Solving (APS)",
@@ -29891,6 +29851,19 @@
                     ],
                     "venue": "CR501",
                     "type": "L"
+                },
+                {
+                    "start": "03:00 PM",
+                    "end": "03:50 PM",
+                    "subject": "Probability and Statistics",
+                    "subjectcode": "23B31MA211",
+                    "teacher": "New Faculty 3",
+                    "batches": [
+                        "BCA3",
+                        "BCA4"
+                    ],
+                    "venue": "CR301",
+                    "type": "L"
                 }
             ],
             "Saturday": [
@@ -29911,7 +29884,7 @@
         }
     },
     "bca-62_sem3_phase1_bca4": {
-        "cacheVersion": "v2025.08.08.22.53.27",
+        "cacheVersion": "v2025.08.25.16.20.42",
         "classes": {
             "Monday": [
                 {
@@ -29980,6 +29953,19 @@
                     "type": "T"
                 },
                 {
+                    "start": "10:00 AM",
+                    "end": "10:50 AM",
+                    "subject": "Algorithm and Problem Solving (APS)",
+                    "subjectcode": "23B61CA211",
+                    "teacher": "",
+                    "batches": [
+                        "BCA3",
+                        "BCA4"
+                    ],
+                    "venue": "CR325 KSA",
+                    "type": "L"
+                },
+                {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
                     "subject": "Object Oriented Programming (C++)",
@@ -30019,19 +30005,6 @@
                 }
             ],
             "Wednesday": [
-                {
-                    "start": "09:00 AM",
-                    "end": "09:50 AM",
-                    "subject": "Algorithm and Problem Solving (APS)",
-                    "subjectcode": "23B61CA211",
-                    "teacher": "",
-                    "batches": [
-                        "BCA3",
-                        "BCA4"
-                    ],
-                    "venue": "CR325 KSA",
-                    "type": "L"
-                },
                 {
                     "start": "01:00 PM",
                     "end": "01:50 PM",
@@ -30139,19 +30112,6 @@
                     "type": "L"
                 },
                 {
-                    "start": "10:00 AM",
-                    "end": "10:50 AM",
-                    "subject": "Probability and Statistics",
-                    "subjectcode": "23B31MA211",
-                    "teacher": "New Faculty 3",
-                    "batches": [
-                        "BCA3",
-                        "BCA4"
-                    ],
-                    "venue": "CR301",
-                    "type": "L"
-                },
-                {
                     "start": "11:00 AM",
                     "end": "11:50 AM",
                     "subject": "Algorithm and Problem Solving (APS)",
@@ -30175,6 +30135,19 @@
                         "BCA4"
                     ],
                     "venue": "CR501",
+                    "type": "L"
+                },
+                {
+                    "start": "03:00 PM",
+                    "end": "03:50 PM",
+                    "subject": "Probability and Statistics",
+                    "subjectcode": "23B31MA211",
+                    "teacher": "New Faculty 3",
+                    "batches": [
+                        "BCA3",
+                        "BCA4"
+                    ],
+                    "venue": "CR301",
                     "type": "L"
                 }
             ],
