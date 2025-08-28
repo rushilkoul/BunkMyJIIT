@@ -347,6 +347,10 @@ document.getElementById("check-button").addEventListener("click", async () => {
                 requestAnimationFrame(() => {
                     observer.observe(card);
                 });
+
+                // yet another hacky solution but i cba to figure out a better way rn
+                let index = Array.prototype.indexOf.call(card.parentNode.children, card);
+                card.style.animationDelay = `${index * 0.005}s`;
             });
         } else {
             responseElm.innerText = "No free rooms found for the selected time.";
@@ -355,3 +359,31 @@ document.getElementById("check-button").addEventListener("click", async () => {
         responseElm.innerText = `Error: ${data.message || "Unknown error"}`;
     }
 });
+
+async function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// lets add some s p i c e
+let header = document.querySelector('.header');
+let maincon = document.querySelector('.main-container');
+
+for (let i = 0; i < maincon.children.length; i++) {
+    maincon.children[i].style.opacity = `0`;
+    maincon.children[i].style.animation = `fadeInUp 0.5s ease forwards`;
+    maincon.children[i].style.animationDelay = `${i * 0.05}s`;
+
+    // the date pickers really hate animation for some reason so i reset it after it finishes playing :sob:
+    // this is a hacky solution but whatever lmao
+    sleep(1000).then(() => {
+        maincon.children[i].style.opacity = '1';
+        maincon.children[i].style.animation = 'none';
+        maincon.children[i].style.animationDelay = '0s';
+    });
+}
+
+for (let i = 0; i < header.children.length; i++) {
+    header.children[i].style.opacity = `0`;
+    header.children[i].style.animation = `fadeInUp 0.5s ease forwards`;
+    header.children[i].style.animationDelay = `${i * 0.075}s`;
+}

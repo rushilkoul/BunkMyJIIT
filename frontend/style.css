@@ -49,6 +49,19 @@ body {
     gap: .5rem;
 }
 
+/* this is slightly different from the fade-in-animation ive set for the cards :D */
+/* it only has translate for 10px instead of 20 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -126,6 +139,7 @@ p {
     border-radius: 20px;
     transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
+    box-shadow: 0px 0px 16px var(--box-shadow-color);
 }
 
 .campus-pill {
@@ -174,6 +188,7 @@ p {
     border-radius: 20px;
     transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
+    box-shadow: 0px 0px 16px var(--box-shadow-color);
 }
 
 .day-pill {
@@ -359,13 +374,26 @@ button:active {
     align-items: center;
     gap: 0.75rem;
     font-size: 1.25rem;
-    box-shadow: 0px 4px var(--box-shadow-color);
+    box-shadow: 0px 4px 6px var(--box-shadow-color);
     flex-grow: 1;
     width: 20%;
 }
 
+@keyframes fadeInUpPre {
+    from {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    to {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+}
+
 pre {
     margin: 0;
+    opacity: 0;
+    animation: fadeInUpPre 0.3s ease-in-out forwards;
 }
 
 @media (max-width: 768px) {
