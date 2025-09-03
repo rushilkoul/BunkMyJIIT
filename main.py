@@ -21,6 +21,10 @@ CORS(app)
 def index():
     return send_from_directory("./frontend/", "index.html")
 
+@app.route("/checkteacher")
+def checkTeacher():
+    return send_from_directory("./frontend/", "checkTeacher.html")
+
 @app.route("/<path:filename>")
 def frontend_files(filename):
     return send_from_directory("./frontend", filename)
@@ -145,4 +149,4 @@ def search_teacher_endpoint():
 # so its actually fine to leave this in
 # i can test locally again wooooo
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)

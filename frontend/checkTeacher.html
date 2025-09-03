@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>BunkMyJIIT</title>
+        <title>BunkMyJIIT ~ Check Teacher</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
@@ -10,7 +10,7 @@
         <div class="main">
             <div class="header">
                 <div>
-                    <h1>BunkMy<em>JIIT</em></h1>
+                    <h1>BunkMy<em>JIIT</em>/ CheckTeacher</h1>
                     <div>
                         <a href="https://github.com/rushilkoul/BunkMyJIIT" target="_blank">
                             <i class="bi bi-github"></i>
@@ -19,44 +19,26 @@
                     </div>
                 </div>
                 
-                <p>Check what venues are unoccupied at JIIT!</p>
+                <p>Find out where a teacher is currently by name!</p>
                 <p class="name">made with 💜 by rushil</p>
             </div>
             
             <pre style="margin-bottom: 0.25rem; opacity: 0.5;">only first/second year data as of Aug 2025</pre>
-            
+           
+
             <div class="main-container">
                 <div class="campus-pills">
                     <div class="campus-pill-background"></div>
                     <div class="campus-pill active" data-campus="btech-62">Sec-62</div>
                     <div class="campus-pill" data-campus="btech-128">Sec-128</div>
                 </div>
-                <div class="day-pills">
-                    <div class="pill-background"></div>
-                    <div class="day-pill active" data-day="Monday">Mon</div>
-                    <div class="day-pill" data-day="Tuesday">Tue</div>
-                    <div class="day-pill" data-day="Wednesday">Wed</div>
-                    <div class="day-pill" data-day="Thursday">Thu</div>
-                    <div class="day-pill" data-day="Friday">Fri</div>
-                    <div class="day-pill" data-day="Saturday">Sat</div>
-                </div>
+                <input type="text" id="teacher-name" placeholder="enter teacher name">
+                <button id="check-teacher-button">Check</button>
+            </div>
 
-                <div class="time-picker-container">
-                    <label class="time-picker-label">From</label>
-                    <div id="picker_from" class="time-picker" data-label="From"></div>
-                </div>
-                <div class="time-picker-container">
-                    <label class="time-picker-label">To</label>
-                    <div id="picker_to" class="time-picker" data-label="To"></div>
-                </div>
-                <button id="check-button">Check</button>
-            </div>
             <p id="res"></p>
-            <div class="responses-container"></div>
-            </div>
         </div>
-        <button class="beta" onclick="document.location.pathname = '/checkteacher'">BETA:<br>CheckTeacher<br>(try it out!)</button>
-                
+        <button class="beta" onclick="document.location.pathname = '/'">go back to main</button>
 
         <script src="script.js"></script>
     </body>

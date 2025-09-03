@@ -465,3 +465,25 @@ p.name {
 div#picker_to >.time-popover {
     left: -93px !important;
 }
+
+.beta {
+    position: fixed;
+    bottom: 1rem;
+    left: 44%;
+    width: 200px !important;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px var(--box-shadow-color);
+}
+
+input {
+    padding: 10px 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--select-bg);
+    transition: all 0.2s ease;
+    width: 200px;
+    box-sizing: border-box;
+}

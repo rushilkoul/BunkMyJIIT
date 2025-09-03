@@ -142,6 +142,7 @@ const initialFrom = storedFrom24 || (legacyFrom ? amPmTo24h(legacyFrom) : '');
 const initialTo = storedTo24 || (legacyTo ? amPmTo24h(legacyTo) : '');
 
 function buildTimePicker(rootEl, storageKey, initial24h, allowedHours, onChange) {
+    if(document.location.pathname == '/checkteacher') return; // dont build time pickers on the check teacher page
     rootEl.classList.add('tp-root');
     rootEl.innerHTML = `
                     <button type="button" class="time-display" aria-haspopup="listbox" aria-expanded="false"></button>
@@ -305,60 +306,90 @@ async function populateAvailableRooms(rooms) {
     });
 }
 
-
-document.getElementById("check-button").addEventListener("click", async () => {
-    const fromRaw = fromPicker.value24;
-    const toRaw = toPicker.value24;
-
-    const validation = validateTimeRange(fromRaw, toRaw);
-    if (!validation.isValid) {
-        showTimeValidationError();
-        return;
-    }
-
-    const response = await fetch("/api/tabledata", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            campus: selectedCampus,
-            day: selectedDay,
-            from: toAmPm(fromRaw),
-            to: toAmPm(toRaw)
-        })
-    });
-    const data = await response.json();
-
-    let responseElm = document.getElementById("res");
-    if (data.status === "success") {
-        if (data.free_classes && data.free_classes.length > 0) {
-            const freeRooms = data.free_classes.map(cls => cls.room).join(", ");
-            await populateAvailableRooms(freeRooms);
-            // Add fade-in animation
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-on-scroll');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.free-class').forEach(card => {
-                requestAnimationFrame(() => {
-                    observer.observe(card);
-                });
-
-                // yet another hacky solution but i cba to figure out a better way rn
-                let index = Array.prototype.indexOf.call(card.parentNode.children, card);
-                card.style.animationDelay = `${index * 0.005}s`;
-            });
-        } else {
-            responseElm.innerText = "No free rooms found for the selected time.";
+if(document.location.pathname != '/checkteacher')
+{
+    document.getElementById("check-button").addEventListener("click", async () => {
+        const fromRaw = fromPicker.value24;
+        const toRaw = toPicker.value24;
+    
+        const validation = validateTimeRange(fromRaw, toRaw);
+        if (!validation.isValid) {
+            showTimeValidationError();
+            return;
         }
-    } else {
-        responseElm.innerText = `Error: ${data.message || "Unknown error"}`;
-    }
-});
+    
+        const response = await fetch("/api/tabledata", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                campus: selectedCampus,
+                day: selectedDay,
+                from: toAmPm(fromRaw),
+                to: toAmPm(toRaw)
+            })
+        });
+        const data = await response.json();
+    
+        let responseElm = document.getElementById("res");
+        if (data.status === "success") {
+            if (data.free_classes && data.free_classes.length > 0) {
+                const freeRooms = data.free_classes.map(cls => cls.room).join(", ");
+                await populateAvailableRooms(freeRooms);
+                // Add fade-in animation
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-on-scroll');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+    
+                document.querySelectorAll('.free-class').forEach(card => {
+                    requestAnimationFrame(() => {
+                        observer.observe(card);
+                    });
+    
+                    // yet another hacky solution but i cba to figure out a better way rn
+                    let index = Array.prototype.indexOf.call(card.parentNode.children, card);
+                    card.style.animationDelay = `${index * 0.005}s`;
+                });
+            } else {
+                responseElm.innerText = "No free rooms found for the selected time.";
+            }
+        } else {
+            responseElm.innerText = `Error: ${data.message || "Unknown error"}`;
+        }
+    });
+}
+
+if(document.location.pathname == '/checkteacher') {
+    document.getElementById("check-teacher-button").addEventListener("click", async () => {
+        let teacherName = document.getElementById("teacher-name").value.trim();
+        if (!teacherName) {
+            alert("Please enter a teacher name.");
+            return;
+        }
+        let responseElm = document.getElementById("res");
+        responseElm.innerText = "Checking...";
+        const response = await fetch("/api/teacher", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ teacher_name: teacherName })
+        });
+        const data = await response.json();
+        if (data.status === "success") {
+            if (data.location) {
+                responseElm.innerText = `${teacherName} is currently at ${data.location}.`;
+            } else {
+                responseElm.innerText = `No location data found for ${teacherName}.`;
+            }
+        }
+        else {
+            responseElm.innerText = `Error: ${data.message || "Unknown error"}`;
+        }
+    });
+}
 
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -387,3 +418,4 @@ for (let i = 0; i < header.children.length; i++) {
     header.children[i].style.animation = `fadeInUp 0.5s ease forwards`;
     header.children[i].style.animationDelay = `${i * 0.075}s`;
 }
+
