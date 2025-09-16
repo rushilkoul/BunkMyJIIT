@@ -23,8 +23,22 @@
                 <p class="name">made with 💜 by rushil</p>
             </div>
             
-            <pre style="margin-bottom: 0.25rem; opacity: 0.5;">only first/second year data as of Aug 2025</pre>
-            
+            <pre style="margin-bottom: 0.25rem; opacity: 0.5;" id="subtext">only first/second year data as of Aug 2025</pre>
+            <script>
+            fetch('https://api.github.com/repos/rushilkoul/BunkMyJIIT/commits/main')
+            .then(response => response.json())
+            .then(data => {
+                    const dateObj = new Date(data.commit.committer.date);
+                    const date = dateObj.toLocaleDateString();
+                const message = data.commit.message;
+                document.getElementById('subtext').innerHTML =
+                `only first/second year data as of Aug 2025<br>(last updated ${date})`;
+            })
+            .catch(() => {
+                console.log('Could not fetch last update info.');
+            });
+            </script>
+
             <div class="main-container">
                 <div class="campus-pills">
                     <div class="campus-pill-background"></div>
