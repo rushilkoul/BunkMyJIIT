@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>BunkMyJIIT</title>
+        <title>BunkMyJIIT ~ Check Room</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
@@ -10,7 +10,7 @@
         <div class="main">
             <div class="header">
                 <div>
-                    <h1>BunkMy<em>JIIT</em></h1>
+                    <h1 onclick="document.location.pathname = '/'">BunkMy<em>JIIT</em>/ CheckRoom</h1>
                     <div>
                         <a href="https://github.com/rushilkoul/BunkMyJIIT" target="_blank">
                             <i class="bi bi-github"></i>
@@ -19,25 +19,12 @@
                     </div>
                 </div>
                 
-                <p>Check what venues are unoccupied at JIIT!</p>
+                <p>Find out if a specific room is available!</p>
                 <p class="name">made with 💜 by rushil</p>
             </div>
             
-            <pre style="margin-bottom: 0.25rem; opacity: 0.5;" id="subtext">only till sem III</pre>
-            <script>
-            fetch('https://api.github.com/repos/rushilkoul/BunkMyJIIT/commits/main')
-            .then(response => response.json())
-            .then(data => {
-                    const dateObj = new Date(data.commit.committer.date);
-                    const date = dateObj.toLocaleDateString();
-                const message = data.commit.message;
-                document.getElementById('subtext').innerHTML =
-                `only till sem III (last update ${date})`;
-            })
-            .catch(() => {
-                console.log('Could not fetch last update info.');
-            });
-            </script>
+            <pre style="margin-bottom: 0.25rem; opacity: 0.5;">only till sem III</pre>
+           
 
             <div class="main-container">
                 <div class="campus-pills">
@@ -63,15 +50,24 @@
                     <label class="time-picker-label">To</label>
                     <div id="picker_to" class="time-picker" data-label="To"></div>
                 </div>
-                <button id="check-button">Check</button>
-                <button id="check-room-button" onclick="document.location.pathname = '/checkroom'">Check a specific room</button>
+                <button id="check-rbutton">Check</button>
             </div>
+
+            <div id="room-selection" style="display: none;">
+                <label class="room-select-label">Select rooms to check:</label>
+                <div class="custom-select-wrapper">
+                    <div class="selected-rooms"></div>
+                    <input type="text" id="room-search" class="room-search-input" placeholder="Search rooms...">
+                    <div class="room-dropdown" style="display: none;">
+                        <div class="room-options"></div>
+                    </div>
+                </div>
+            </div>
+
             <p id="res"></p>
             <div class="responses-container"></div>
-            </div>
         </div>
-        <!-- <button class="beta" onclick="document.location.pathname = '/checkteacher'">BETA:<br>CheckTeacher<br>(try it out!)</button> -->
-                
+        <!-- <button class="beta" onclick="document.location.pathname = '/'">go back to main</button> -->
 
         <script src="script.js"></script>
     </body>

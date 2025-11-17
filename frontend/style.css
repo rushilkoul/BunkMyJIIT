@@ -42,6 +42,144 @@ body {
     margin: 0;
 }
 
+.room-select-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#room-selection {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.selected-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+    min-height: 0;
+}
+
+.selected-room-pill {
+    background-color: var(--button-bg);
+    color: var(--bg-color);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Geist", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.selected-room-pill:hover {
+    opacity: 0.85;
+}
+
+.selected-room-pill i {
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.selected-room-pill i:hover {
+    color: #ff4444;
+}
+
+.room-search-input {
+    width: 100%;
+    padding: .75rem .5rem;
+    background-color: var(--select-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: "Geist", sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.room-search-input:hover {
+    border-color: var(--hover-border-color);
+}
+
+.room-search-input:focus {
+    border-color: var(--focus-border-color);
+    box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.1);
+}
+
+.room-search-input::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.room-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--select-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 6px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.room-options {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.room-option {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-color);
+    font-family: "Geist", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.room-option:hover {
+    background: var(--option-hover-bg);
+}
+
+.room-option.selected {
+    background: var(--option-selected-bg);
+    color: var(--option-selected-color);
+    border-color: transparent;
+}
+
 .main {
     padding: 2rem;
     display: flex;
@@ -311,6 +449,16 @@ button:active {
     background-color: var(--button-active);
 }
 
+button#check-room-button {
+    background-color: var(--bg-color);
+    color: var(--button-bg);
+    transition: color 0.2s ease;
+}
+
+button#check-room-button:hover {
+    color: var(--focus-border-color);
+}
+
 .time-picker-container {
     display: flex;
     flex-direction: column;
@@ -475,7 +623,7 @@ div#picker_to >.time-popover {
     box-shadow: 0px 2px 10px var(--box-shadow-color);
 }
 
-input {
+input:not(.checkroom) {
     padding: 10px 1rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -486,4 +634,40 @@ input {
     transition: all 0.2s ease;
     width: 200px;
     box-sizing: border-box;
+}
+
+input.room-search-input {
+    width: 100% !important;
+}
+
+#room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: space-evenly;
+}
+
+#room-list > label {
+    background-color: transparent;
+    border: 2px solid var(--focus-border-color);
+    color: var(--button-bg);
+    padding: .75rem;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    box-shadow: 0px 4px 6px var(--box-shadow-color);
+    flex-grow: 1;
+    width: 20%;
+}
+
+.free-class.unavailable {
+    border-color: #ff4444;
+    box-shadow: 0px 4px 6px #d62f2f57;
+}
+.free-class.available {
+    border-color: var(--success-color);
+    box-shadow: 0px 4px 6px #63f9722b;
 }

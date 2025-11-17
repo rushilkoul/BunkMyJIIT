@@ -112,3 +112,48 @@ def search_teacher(json_data, teacher_name):
                 })
     
     return teacher_classes
+
+
+def get_all_rooms(json_data, campus=None):
+    """Get all unique room names from the data"""
+    rooms = set()
+    
+    for batch_key, batch_data in json_data.items():
+        if campus and not batch_key.startswith(campus):
+            continue
+            
+        for day, day_classes in batch_data.get("classes", {}).items():
+            for cls in day_classes:
+                room = cls.get("venue", "").strip()
+                if room:
+                    rooms.add(room)
+    
+    return sorted(list(rooms))
+
+
+def check_room_availability(json_data, day, check_start, check_end, campus, rooms):
+    """Check if specific rooms are available during the specified time"""
+    check_start = parse_time(check_start)
+    check_end = parse_time(check_end)
+    
+    occupied_rooms = set()
+    
+    for batch_key, batch_data in json_data.items():
+        if campus and not batch_key.startswith(campus):
+            continue
+            
+        day_classes = batch_data.get("classes", {}).get(day, [])
+        
+        for cls in day_classes:
+            room = cls.get("venue", "")
+            start = parse_time(cls["start"])
+            end = parse_time(cls["end"])
+            
+            if time_overlap(start, end, check_start, check_end):
+                occupied_rooms.add(room)
+    
+    availability = {}
+    for room in rooms:
+        availability[room] = room not in occupied_rooms
+    
+    return availability

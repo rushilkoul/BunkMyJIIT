@@ -25,6 +25,10 @@ def index():
 def checkTeacher():
     return send_from_directory("./frontend/", "checkTeacher.html")
 
+@app.route("/checkroom")
+def checkRoom():
+    return send_from_directory("./frontend/", "checkRoom.html")
+
 @app.route("/<path:filename>")
 def frontend_files(filename):
     return send_from_directory("./frontend", filename)
@@ -137,6 +141,72 @@ def search_teacher_endpoint():
             }
         
         return jsonify(response_data)
+        
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
+@app.route("/api/getallrooms", methods=["GET"])
+def get_all_rooms_endpoint():
+    """Endpoint to get all rooms for a campus"""
+    print("Received a request to get all rooms")
+    
+    if not classes_data:
+        return jsonify({
+            "status": "error",
+            "message": "Classes data not loaded"
+        }), 500
+    
+    try:
+        campus = request.args.get('campus')
+        
+        rooms = util.get_all_rooms(classes_data, campus)
+        
+        return jsonify({
+            "status": "success",
+            "rooms": rooms,
+            "count": len(rooms)
+        })
+        
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
+@app.route("/api/checkrooms", methods=["POST"])
+def check_rooms_endpoint():
+    """Endpoint to check if specific rooms are available"""
+    print("Received a request to check rooms")
+    
+    if not classes_data:
+        return jsonify({
+            "status": "error",
+            "message": "Classes data not loaded"
+        }), 500
+    
+    try:
+        data = request.get_json()
+        day = data.get('day')
+        from_time = data.get('from')
+        to_time = data.get('to')
+        campus = data.get('campus')
+        rooms = data.get('rooms', [])
+        
+        if not all([day, from_time, to_time, rooms]):
+            return jsonify({
+                "status": "error",
+                "message": "Missing required parameters"
+            }), 400
+        
+        availability = util.check_room_availability(classes_data, day, from_time, to_time, campus, rooms)
+        
+        return jsonify({
+            "status": "success",
+            "availability": availability
+        })
         
     except Exception as e:
         return jsonify({

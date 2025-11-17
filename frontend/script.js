@@ -306,7 +306,7 @@ async function populateAvailableRooms(rooms) {
     });
 }
 
-if(document.location.pathname != '/checkteacher')
+if(document.location.pathname == '/')
 {
     document.getElementById("check-button").addEventListener("click", async () => {
         const fromRaw = fromPicker.value24;
@@ -389,6 +389,190 @@ if(document.location.pathname == '/checkteacher') {
             responseElm.innerText = `Error: ${data.message || "Unknown error"}`;
         }
     });
+}
+
+if(document.location.pathname == '/checkroom') {
+    let allRooms = [];
+    let selectedRooms = new Set();
+    let filteredRooms = [];
+
+    async function loadAllRooms() {
+        const response = await fetch(`/api/getallrooms?campus=${selectedCampus}`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" }
+        });
+        const data = await response.json();
+
+        if (data.status === "success" && data.rooms && data.rooms.length > 0) {
+            allRooms = data.rooms;
+            filteredRooms = [...allRooms];
+            displayRoomSelection();
+        } else {
+            document.getElementById("res").innerText = "No rooms found for the selected campus.";
+        }
+    }
+
+    function displayRoomSelection() {
+        const roomSelectionDiv = document.getElementById("room-selection");
+        const searchInput = document.getElementById("room-search");
+        const dropdown = document.querySelector(".room-dropdown");
+        const optionsContainer = document.querySelector(".room-options");
+        
+        roomSelectionDiv.style.display = "block";
+        renderRoomOptions();
+        updateSelectedRoomsDisplay();
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            filteredRooms = allRooms.filter(room => room.toLowerCase().includes(query));
+            renderRoomOptions();
+        });
+
+        searchInput.addEventListener('focus', () => {
+            dropdown.style.display = 'block';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.custom-select-wrapper')) {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        const checkButton = document.getElementById("check-rbutton");
+        checkButton.onclick = checkSelectedRooms;
+    }
+
+    function renderRoomOptions() {
+        const optionsContainer = document.querySelector(".room-options");
+        optionsContainer.innerHTML = '';
+
+        filteredRooms.forEach(room => {
+            const option = document.createElement('div');
+            option.className = 'room-option';
+            if (selectedRooms.has(room)) {
+                option.classList.add('selected');
+            }
+            option.textContent = room;
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleRoom(room);
+            });
+            optionsContainer.appendChild(option);
+        });
+    }
+
+    function toggleRoom(room) {
+        if (selectedRooms.has(room)) {
+            selectedRooms.delete(room);
+        } else {
+            selectedRooms.add(room);
+        }
+        updateSelectedRoomsDisplay();
+        renderRoomOptions();
+    }
+
+    function updateSelectedRoomsDisplay() {
+        const container = document.querySelector('.selected-rooms');
+        container.innerHTML = '';
+
+        selectedRooms.forEach(room => {
+            const pill = document.createElement('div');
+            pill.className = 'selected-room-pill';
+            pill.innerHTML = `
+                <span>${room}</span>
+                <i class="bi bi-x" data-room="${room}"></i>
+            `;
+            pill.querySelector('i').addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleRoom(room);
+            });
+            container.appendChild(pill);
+        });
+    }
+
+    async function checkSelectedRooms() {
+        if (selectedRooms.size === 0) {
+            alert("Please select at least one room to check.");
+            return;
+        }
+
+        const fromRaw = fromPicker.value24;
+        const toRaw = toPicker.value24;
+
+        const response = await fetch("/api/checkrooms", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                campus: selectedCampus,
+                day: selectedDay,
+                from: toAmPm(fromRaw),
+                to: toAmPm(toRaw),
+                rooms: Array.from(selectedRooms)
+            })
+        });
+        const data = await response.json();
+
+        if (data.status === "success") {
+            displayRoomAvailability(data.availability);
+        } else {
+            document.getElementById("res").innerText = `Error: ${data.message || "Unknown error"}`;
+        }
+    }
+
+    async function displayRoomAvailability(availability) {
+        let roomArray = Object.keys(availability);
+        let responseParent = document.querySelector(".responses-container");
+        responseParent.innerHTML = '';
+
+        let locations = await getRoomLocations(roomArray);
+
+        roomArray.forEach(room => {
+            let isAvailable = availability[room];
+            let roomLocation = locations[room] ? `• ${locations[room]}` : " ";
+            let roomDiv = document.createElement("div");
+
+            
+            if (!isAvailable) {
+                roomDiv.className = "free-class unavailable";
+                roomDiv.innerHTML = `
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div>
+                        <h1>${room}</h1>
+                        <p style="color: red; font-weight: bold;">Unavailable <span> ${roomLocation}</span></p>
+                    </div>`;
+            } else {
+                roomDiv.className = "free-class available";
+                roomDiv.innerHTML = `
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div>
+                        <h1>${room}</h1>
+                        <p>Available <span> ${roomLocation}</span></p>
+                    </div>`;
+            }
+            responseParent.appendChild(roomDiv);
+        });
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.free-class').forEach(card => {
+            requestAnimationFrame(() => {
+                observer.observe(card);
+            });
+
+            let index = Array.prototype.indexOf.call(card.parentNode.children, card);
+            card.style.animationDelay = `${index * 0.005}s`;
+        });
+    }
+
+    document.getElementById("check-rbutton").addEventListener("click", loadAllRooms);
+    document.getElementById("check-rbutton").click();
 }
 
 async function sleep(ms) {
