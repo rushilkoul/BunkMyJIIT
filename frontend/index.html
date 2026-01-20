@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-    <head>
-        <title>BunkMyJIIT</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>BunkMyJIIT</title>
+  
+    <link rel="canonical" href="https://bunkmyjiit.rushilk.dev/">
+  
+    <meta
+      name="description"
+      content="BunkMyJIIT helps JIIT students find available venues on campus."
+    />
+  
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BunkMyJIIT - Venue Scouter for JIIT">
+    <meta
+      property="og:description"
+      content="BunkMyJIIT helps JIIT students find available venues on campus."
+    >
+    <meta property="og:url" content="https://bunkmyjiit.rushilk.dev/">
+    <meta property="og:image" content="https://bunkmyjiit.rushilk.dev/og-image.png">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BunkMyJIIT - Venue Scouter for JIIT">
+    <meta
+      name="twitter:description"
+      content="An attendance and bunk planning tool for JIIT students."
+    >
+    <meta name="twitter:image" content="https://bunkmyjiit.rushilk.dev/og-image.png">
+ 
+    <link rel="icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "BunkMyJIIT",
+      "url": "https://bunkmyjiit.rushilk.dev/",
+      "description": "A venue availability tool for JIIT students.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "creator": {
+        "@type": "Person",
+        "name": "Rushil Koul",
+        "url": "https://www.rushilk.dev/"
+      }
+    }
+    </script>
+  </head>
+  
     <body class="light-theme">
         <div class="main">
             <div class="header">
@@ -23,7 +70,7 @@
                 <p class="name">made with 💜 by rushil</p>
             </div>
             
-            <pre style="margin-bottom: 0.25rem; opacity: 0.5;" id="subtext">only till sem III</pre>
+            <pre style="margin-bottom: 0.25rem; opacity: 0.5;" id="subtext">data of sem II and IV</pre>
             <script>
             fetch('https://api.github.com/repos/rushilkoul/BunkMyJIIT/commits/main')
             .then(response => response.json())
@@ -32,7 +79,7 @@
                     const date = dateObj.toLocaleDateString();
                 const message = data.commit.message;
                 document.getElementById('subtext').innerHTML =
-                `only till sem III (last update ${date})`;
+                `data of sem II and IV (last update ${date})`;
             })
             .catch(() => {
                 console.log('Could not fetch last update info.');
