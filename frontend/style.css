@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
     --bg-color: #F9FAFB;
     --text-color: #111827;
-    --border-color: #ededed;
+    --border-color: #d2d2d2;
     --hover-border-color: #9ca3af;
     --focus-border-color: #6b7280;
     --button-bg: #111827;
@@ -15,23 +16,25 @@
     --option-selected-color: white;
     --success-color: #00990d;
     --box-shadow-color: #d6d6d6;
+    --free-class-bg: #f7f7f7;
 }
 
 .dark-theme {
-    --bg-color: #070707;
+    --bg-color: #121212;
     --text-color: #f9fafb;
-    --border-color: #131313;
+    --border-color: #323232;
     --hover-border-color: #6b7280;
     --focus-border-color: #cbcbcb;
     --button-bg: #f7f7f7;
     --button-hover: #fbfbfb;
     --button-active: #ececec;
-    --select-bg: #1a1a1a;
+    --select-bg: #161616;
     --option-hover-bg: #0f0f0f;
     --option-selected-bg: #e7e7e7;
     --option-selected-color: #111827;
     --success-color: #8dff97;
     --box-shadow-color: #3c3c3c;
+    --free-class-bg: #161616;
 }
 
 body {
@@ -260,7 +263,7 @@ p {
 .campus-pills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: var(--border-color);
+    background-color: var(--free-class-bg);
     border-radius: 25px;
     padding: 4px;
     gap: 2px;
@@ -309,7 +312,7 @@ p {
 .day-pills {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-color: var(--border-color);
+    background-color: var(--free-class-bg);
     border-radius: 25px;
     padding: 4px;
     gap: 2px;
@@ -510,8 +513,8 @@ button#check-room-button:hover {
 }
 
 .free-class {
-    background-color: transparent;
-    border: 2px solid var(--focus-border-color);
+    background-color: var(--free-class-bg);
+    border: 1px solid var(--border-color);
     color: var(--button-bg);
     padding: .75rem;
     border-radius: 10px;
@@ -522,9 +525,12 @@ button#check-room-button:hover {
     align-items: center;
     gap: 0.75rem;
     font-size: 1.25rem;
-    box-shadow: 0px 4px 6px var(--box-shadow-color);
     flex-grow: 1;
     width: 20%;
+}
+
+.free-class > i {
+    color: var(--button-active);
 }
 
 @keyframes fadeInUpPre {
@@ -542,6 +548,8 @@ pre {
     margin: 0;
     opacity: 0;
     animation: fadeInUpPre 0.3s ease-in-out forwards;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -581,6 +589,7 @@ pre {
     font-weight: 300;
     opacity: 0.9;
     color: var(--success-color);
+    font-family: "JetBrains Mono", monospace;
 }
 
 .free-class > div > h1 {
@@ -608,6 +617,7 @@ p.name {
     font-size: 0.75rem;
     font-weight: 200;
     opacity: 0.7;
+
 }
 
 div#picker_to >.time-popover {
